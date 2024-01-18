@@ -11,8 +11,8 @@ export default function Home() {
 				<div className='flex flex-col justify-center items-center gap-2'>
 					<h1>
 						frc
-						<span className='font-mono -tracking-wider'>
-							<span className='text-first-red'>.</span>
+						<span className='font-mono'>
+							<span className='text-first-red -tracking-widest'>.</span>
 							<span className='text-first-white'>s</span>
 							<span className='text-first-blue'>h</span>
 						</span>
