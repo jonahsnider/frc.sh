@@ -5,7 +5,7 @@ import { TileHeading } from './tile-heading';
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {
 	return (
-		<main className='min-h-screen p-4 w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:grid-flow-row-dense'>
+		<main className='min-h-screen p-4 w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:grid-flow-row-dense'>
 			<TileHeading>
 				<div className='flex flex-col justify-center items-center gap-2'>
 					<h1>
@@ -73,14 +73,14 @@ export default function Home() {
 
 			<TileGroup
 				category={CategoryId.Advantagekit}
-				className='lg:col-start-2'
+				className='lg:col-start-2 xl:col-start-4'
 				title='AdvantageKit'
 				tiles={[{ name: 'Docs', url: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme' }]}
 			/>
 
 			<TileGroup
 				category={CategoryId.Pathplanner}
-				className='lg:col-start-1'
+				className='lg:col-start-1 xl:col-start-4'
 				title='PathPlanner'
 				tiles={[
 					{ name: 'Docs', url: 'https://pathplanner.dev/home.html' },
@@ -90,14 +90,14 @@ export default function Home() {
 
 			<TileGroup
 				category={CategoryId.Photonvision}
-				className='lg:col-start-2'
+				className='lg:col-start-2 xl:col-start-4'
 				title='Photonvision'
 				tiles={[{ name: 'Docs', url: 'https://docs.photonvision.org/en/latest/' }]}
 			/>
 
 			<TileGroup
 				category={CategoryId.Limelight}
-				className='lg:col-start-3'
+				className='lg:col-start-3 xl:col-start-4'
 				title='Limelight'
 				tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
 			/>
