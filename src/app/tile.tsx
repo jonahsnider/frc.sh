@@ -1,5 +1,9 @@
+'use client';
+
 import { CategoryId } from '@/content';
+import { track } from '@vercel/analytics';
 import clsx from 'clsx';
+import { usePlausible } from './hooks/plausible';
 
 type Props = {
 	category: CategoryId;
@@ -8,7 +12,10 @@ type Props = {
 };
 
 export function Tile({ name, url, category }: Props) {
+	const plausible = usePlausible();
+
 	return (
+		// biome-ignore lint/a11y/useValidAnchor: The element has a valid href, the onClick handler isn't used for navigation
 		<a
 			className={clsx(
 				'shadow px-2 py-8 col-span-1 row-span-1 rounded-lg transition-all bg-opacity-10 hover:bg-opacity-20 active:bg-opacity-30 border-opacity-75 hover:border-opacity-100 border-2 flex justify-center items-center text-center text-xl',
@@ -23,6 +30,10 @@ export function Tile({ name, url, category }: Props) {
 				},
 			)}
 			href={url}
+			onClick={() => {
+				plausible('Click tile', { props: { name } });
+				track('Click tile', { name });
+			}}
 		>
 			{name}
 		</a>
