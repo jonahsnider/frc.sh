@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
+import PlausibleProvider from 'next-plausible';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -23,6 +24,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
+			<head>
+				<PlausibleProvider domain='frc.sh' />
+			</head>
 			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className)}>
 				{children} <Analytics />;
 			</body>
