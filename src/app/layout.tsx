@@ -28,7 +28,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<PlausibleProvider domain='frc.sh' />
 			</head>
 			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className)}>
-				{children} <Analytics />;
+				{children}
+
+				<Analytics />
 			</body>
 		</html>
 	);
