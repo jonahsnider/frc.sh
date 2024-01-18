@@ -4,7 +4,7 @@ import { TileHeading } from './tile-heading';
 import { TileSectionHeading } from './tile-section-heading';
 
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
-export  default function Home() {
+export default function Home() {
 	return (
 		<main className='min-h-screen p-4 w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
 			<TileHeading>
