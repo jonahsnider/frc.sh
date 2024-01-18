@@ -13,3 +13,6 @@ insert_final_newline = true
 
 [*.{yml,yaml,md}]
 indent_style = space
+
+[*.alt.txt]
+insert_final_newline = false
