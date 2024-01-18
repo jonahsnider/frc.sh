@@ -8,7 +8,7 @@ export default function Home() {
 		<main className='min-h-screen p-4 w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:grid-flow-row-dense'>
 			<TileHeading>
 				<div className='flex flex-col justify-center items-center gap-2'>
-					<h1>
+					<h1 className='text-4xl'>
 						frc
 						<span className='font-mono'>
 							<span className='text-first-red -tracking-widest'>.</span>
@@ -16,10 +16,16 @@ export default function Home() {
 							<span className='text-first-blue'>h</span>
 						</span>
 					</h1>
-					<p className='text-base'>
+					<p>
 						Created by{' '}
 						<a href='https://jonahsnider.com' className='underline'>
 							Jonah Snider
+						</a>
+					</p>
+					<p>
+						View source on{' '}
+						<a href='https://github.com/jonahsnider/frc.sh' className='underline'>
+							GitHub
 						</a>
 					</p>
 				</div>
