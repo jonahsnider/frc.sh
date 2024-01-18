@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -22,7 +23,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
-			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className)}>{children}</body>
+			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className)}>
+				{children} <Analytics />;
+			</body>
 		</html>
 	);
 }
