@@ -9,7 +9,14 @@ export default function Home() {
 		<main className='min-h-screen p-4 w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
 			<TileHeading>
 				<div className='flex flex-col justify-center items-center gap-2'>
-					frc.sh
+					<h1>
+						frc
+						<span className='font-mono -tracking-wider'>
+							<span className='text-first-red'>.</span>
+							<span className='text-first-white'>s</span>
+							<span className='text-first-blue'>h</span>
+						</span>
+					</h1>
 					<p className='text-base'>
 						Created by{' '}
 						<a href='https://jonahsnider.com' className='underline'>

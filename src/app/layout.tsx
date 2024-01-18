@@ -2,10 +2,11 @@ import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import PlausibleProvider from 'next-plausible';
-import { Inter } from 'next/font/google';
+import { Fira_Mono, Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+const firaMono = Fira_Mono({ weight: ['400'], subsets: ['latin'], variable: '--font-fira-mono' });
 
 export const metadata: Metadata = {
 	title: 'frc.sh',
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<head>
 				<PlausibleProvider domain='frc.sh' />
 			</head>
-			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className)}>
+			<body className={clsx('container mx-auto bg-neutral-900 text-white', inter.className, firaMono.variable)}>
 				{children}
 
 				<Analytics />
