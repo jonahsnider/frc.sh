@@ -91,7 +91,7 @@ export default function Home() {
 			<TileGroup
 				category={CategoryId.Photonvision}
 				className='lg:col-start-2 xl:col-start-4'
-				title='Photonvision'
+				title='PhotonVision'
 				tiles={[{ name: 'Docs', url: 'https://docs.photonvision.org/en/latest/' }]}
 			/>
 
