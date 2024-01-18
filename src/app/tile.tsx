@@ -10,9 +10,10 @@ type Props = {
 	url: string;
 	name: string;
 	className: string;
+	parentTitle: string;
 };
 
-export function Tile({ name, url, category, className }: Props) {
+export function Tile({ name, url, category, className, parentTitle }: Props) {
 	const plausible = usePlausible();
 
 	return (
@@ -33,8 +34,8 @@ export function Tile({ name, url, category, className }: Props) {
 			)}
 			href={url}
 			onClick={() => {
-				plausible('Click tile', { props: { name } });
-				track('Click tile', { name });
+				plausible('Click tile', { props: { name: `${parentTitle} ${name}` } });
+				track('Click tile', { name: `${parentTitle} ${name}` });
 			}}
 		>
 			{name}

@@ -36,7 +36,7 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 				{title}
 			</TileSectionHeading>
 			{tiles.map(({ name, url }) => (
-				<Tile key={name} className={className} category={category} name={name} url={url} />
+				<Tile key={name} className={className} category={category} name={name} url={url} parentTitle={title} />
 			))}
 		</>
 	);
