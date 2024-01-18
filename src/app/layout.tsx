@@ -8,8 +8,17 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
 	title: 'frc.sh',
 	description: 'Quick links for FRC programming & software resources.',
+	metadataBase: new URL('https://frc.sh'),
+	openGraph: {
+		url: 'https://frc.sh',
+		type: 'website',
+		title: 'frc.sh',
+		siteName: 'frc.sh',
+		description: 'Quick links for FRC programming & software resources.',
+	},
 };
 
+// biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en'>
