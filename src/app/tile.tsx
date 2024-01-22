@@ -20,16 +20,16 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 		// biome-ignore lint/a11y/useValidAnchor: The element has a valid href, the onClick handler isn't used for navigation
 		<a
 			className={clsx(
-				'shadow px-2 py-8 col-span-1 row-span-1 rounded-lg transition-all bg-opacity-10 hover:bg-opacity-20 active:bg-opacity-30 focus:bg-opacity-20 border-opacity-75 hover:border-opacity-100 border-2 flex justify-center items-center text-center text-xl xl:text-2xl outline-none',
+				'col-span-1 row-span-1 flex items-center justify-center rounded-lg border-2 border-opacity-75 bg-opacity-10 px-2 py-8 text-center text-xl shadow outline-none transition-all hover:border-opacity-100 hover:bg-opacity-20 focus:bg-opacity-20 active:bg-opacity-30 xl:text-2xl',
 				{
-					'bg-ctre shadow-ctre border-ctre': category === CategoryId.Ctre,
-					'bg-advantagekit shadow-advantagekit border-advantagekit': category === CategoryId.Advantagekit,
-					'bg-pathplanner shadow-pathplanner border-pathplanner': category === CategoryId.Pathplanner,
-					'bg-wpilib shadow-wpilib border-wpilib': category === CategoryId.Wpilib,
-					'bg-rev shadow-rev border-rev': category === CategoryId.Rev,
-					'bg-limelight shadow-limelight border-limelight': category === CategoryId.Limelight,
-					'bg-photonvision shadow-photonvision border-photonvision': category === CategoryId.Photonvision,
-					'bg-first-sky-blue shadow-first-sky-blue border-first-sky-blue': category === CategoryId.First,
+					'border-ctre bg-ctre shadow-ctre': category === CategoryId.Ctre,
+					'border-advantagekit bg-advantagekit shadow-advantagekit': category === CategoryId.Advantagekit,
+					'border-pathplanner bg-pathplanner shadow-pathplanner': category === CategoryId.Pathplanner,
+					'border-wpilib bg-wpilib shadow-wpilib': category === CategoryId.Wpilib,
+					'border-rev bg-rev shadow-rev': category === CategoryId.Rev,
+					'border-limelight bg-limelight shadow-limelight': category === CategoryId.Limelight,
+					'border-photonvision bg-photonvision shadow-photonvision': category === CategoryId.Photonvision,
+					'border-first-sky-blue bg-first-sky-blue shadow-first-sky-blue': category === CategoryId.First,
 				},
 				className,
 			)}

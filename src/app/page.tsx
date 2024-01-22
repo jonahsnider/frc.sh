@@ -5,13 +5,13 @@ import { TileHeading } from './tile-heading';
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {
 	return (
-		<main className='min-h-screen p-4 w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:grid-flow-row-dense'>
+		<main className='flex min-h-screen w-full flex-col gap-4 p-4 md:grid md:grid-cols-2 lg:grid-flow-row-dense lg:grid-cols-3 xl:grid-cols-4'>
 			<TileHeading>
-				<div className='flex flex-col justify-center items-center gap-2'>
+				<div className='flex flex-col items-center justify-center gap-2'>
 					<h1 className='text-4xl'>
 						frc
 						<span className='font-mono'>
-							<span className='text-first-red -tracking-widest'>.</span>
+							<span className='-tracking-widest text-first-red'>.</span>
 							<span className='text-first-white'>s</span>
 							<span className='text-first-blue'>h</span>
 						</span>
