@@ -29,6 +29,7 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 						'bg-rev': category === CategoryId.Rev,
 						'bg-limelight': category === CategoryId.Limelight,
 						'bg-photonvision': category === CategoryId.Photonvision,
+						'bg-first-sky-blue': category === CategoryId.First,
 					},
 					className,
 				)}

@@ -25,6 +25,7 @@ const config: Config = {
 					red: '#ED1C24',
 					blue: '#0066B3',
 					white: '#fff',
+					'sky-blue': '#009cd7',
 				},
 			},
 			fontFamily: {

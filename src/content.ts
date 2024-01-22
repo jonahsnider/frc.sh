@@ -6,4 +6,5 @@ export enum CategoryId {
 	Advantagekit = 'advantagekit',
 	Limelight = 'limelight',
 	Photonvision = 'photonvision',
+	First = 'first',
 }

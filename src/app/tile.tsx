@@ -29,6 +29,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 					'bg-rev shadow-rev border-rev': category === CategoryId.Rev,
 					'bg-limelight shadow-limelight border-limelight': category === CategoryId.Limelight,
 					'bg-photonvision shadow-photonvision border-photonvision': category === CategoryId.Photonvision,
+					'bg-first-sky-blue shadow-first-sky-blue border-first-sky-blue': category === CategoryId.First,
 				},
 				className,
 			)}

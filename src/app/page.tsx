@@ -107,6 +107,22 @@ export default function Home() {
 				title='Limelight'
 				tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
 			/>
+
+			<TileGroup
+				category={CategoryId.First}
+				className='lg:col-start-1 xl:col-start-1'
+				title='FIRST'
+				tiles={[
+					{
+						name: 'Game manual PDF',
+						url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/Manual/${new Date().getFullYear()}GameManual.pdf`,
+					},
+					{
+						name: 'Field layout and marking PDF',
+						url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`,
+					},
+				]}
+			/>
 		</main>
 	);
 }
