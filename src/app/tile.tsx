@@ -34,6 +34,8 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 				className,
 			)}
 			href={url}
+			rel='noreferrer'
+			target='_blank'
 			onClick={() => {
 				plausible('Click tile', { props: { name: `${parentTitle} ${name}` } });
 				track('Click tile', { name: `${parentTitle} ${name}` });
