@@ -27,6 +27,10 @@ const config: Config = {
 					white: '#fff',
 					'sky-blue': '#009cd7',
 				},
+
+				java: '#b07219',
+				cpp: '#f34b7d',
+				python: '#3572A5',
 			},
 			fontFamily: {
 				mono: ['var(--font-fira-mono)'],

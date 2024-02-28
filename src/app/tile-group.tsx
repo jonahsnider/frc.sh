@@ -1,11 +1,16 @@
+'use client';
+
 import { CategoryId } from '@/content';
 import clsx from 'clsx';
+import { useContext } from 'react';
+import { ToggleId, TogglesContext } from './contexts/toggles-context';
 import { Tile } from './tile';
 import { TileSectionHeading } from './tile-section-heading';
 
 type Entry = {
 	name: string;
 	url: string;
+	toggle?: ToggleId;
 };
 
 type Props = {
@@ -16,6 +21,14 @@ type Props = {
 };
 
 export function TileGroup({ category, className, tiles, title }: Props) {
+	const togglesContext = useContext(TogglesContext);
+
+	const filteredTiles = tiles.filter((tile) => (tile.toggle ? togglesContext.isToggled(tile.toggle) : true));
+
+	if (filteredTiles.length === 0) {
+		return undefined;
+	}
+
 	return (
 		<>
 			<TileSectionHeading
@@ -36,7 +49,7 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 			>
 				{title}
 			</TileSectionHeading>
-			{tiles.map(({ name, url }) => (
+			{filteredTiles.map(({ name, url }) => (
 				<Tile key={name} className={className} category={category} name={name} url={url} parentTitle={title} />
 			))}
 		</>
