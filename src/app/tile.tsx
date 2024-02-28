@@ -20,7 +20,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 		// biome-ignore lint/a11y/useValidAnchor: The element has a valid href, the onClick handler isn't used for navigation
 		<a
 			className={clsx(
-				'col-span-1 row-span-1 flex items-center justify-center rounded-lg border-2 border-opacity-75 bg-opacity-10 px-2 py-8 text-center text-xl shadow outline-none transition-all hover:border-opacity-100 hover:bg-opacity-20 focus:bg-opacity-20 active:bg-opacity-30 xl:text-2xl',
+				'col-span-1 row-span-1 flex items-center justify-center rounded-lg border-2 border-opacity-75 bg-opacity-10 px-2 py-8 text-center text-2xl shadow outline-none transition-all hover:border-opacity-100 hover:bg-opacity-20 focus:bg-opacity-20 active:bg-opacity-30 lg:text-3xl',
 				{
 					'border-ctre bg-ctre shadow-ctre': category === CategoryId.Ctre,
 					'border-advantagekit bg-advantagekit shadow-advantagekit': category === CategoryId.Advantagekit,
