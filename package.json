@@ -11,6 +11,7 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@headlessui/react": "1.7.18",
 		"@serwist/next": "8.4.4",
 		"@serwist/precaching": "8.4.4",
 		"@serwist/sw": "8.4.4",
