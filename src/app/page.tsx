@@ -1,9 +1,9 @@
 'use client';
 
 import { CategoryId } from '@/content';
+import { ToggleId, TogglesProvider } from './contexts/toggles-context';
 import { PageHeaderTile } from './page-header-tile';
 import { TileGroup } from './tile-group';
-import { ToggleId, TogglesProvider } from './contexts/toggles-context';
 
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {
@@ -34,6 +34,10 @@ export default function Home() {
 							url: 'https://api.ctr-electronics.com/phoenix6/release/python/',
 							toggle: ToggleId.Python,
 						},
+						{
+							name: 'Kraken LEDs',
+							url: 'https://docs.wcproducts.com/kraken-x60/kraken-x60-+-talonfx/status-lights',
+						},
 					]}
 				/>
 
@@ -58,6 +62,10 @@ export default function Home() {
 							name: 'REVLib Python reference',
 							url: 'https://robotpy.readthedocs.io/projects/rev/en/stable/rev.html',
 							toggle: ToggleId.Python,
+						},
+						{
+							name: 'SPARK MAX LEDs',
+							url: 'https://docs.revrobotics.com/sparkmax/status-led',
 						},
 					]}
 				/>
