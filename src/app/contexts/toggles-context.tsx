@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { PropsWithChildren, createContext, useContext, useMemo } from 'react';
+import { useLocalStorage } from '@uidotdev/usehooks';
+import { PropsWithChildren, createContext, useMemo } from 'react';
 
 export enum ToggleId {
 	Java = 'java',
@@ -19,41 +19,28 @@ export const TogglesContext = createContext<Context>({
 	toggle: () => {},
 });
 
-const DEFAULT_VALUE = true;
+const LOCAL_STORAGE_KEY = 'toggles';
+type LocalStorageToggles = ToggleId[];
 
 export function TogglesProvider({ children }: PropsWithChildren) {
-	const router = useRouter();
-	const queryParams = useSearchParams();
-	const pathname = usePathname();
+	const [storedIds, setStoredIds] = useLocalStorage<LocalStorageToggles>(LOCAL_STORAGE_KEY, Object.values(ToggleId));
 
 	function isToggled(id: ToggleId): boolean {
-		return queryParams.has(id) ? queryParams.get(id) !== '0' : DEFAULT_VALUE;
+		return storedIds.includes(id);
 	}
 
 	function toggle(id: ToggleId): void {
 		const newValue = !isToggled(id);
 
-		const newParams = new URLSearchParams(queryParams);
-
-		if (newValue === DEFAULT_VALUE) {
-			newParams.delete(id);
+		if (newValue) {
+			setStoredIds([...storedIds, id]);
 		} else {
-			newParams.set(id, newValue ? '1' : '0');
+			setStoredIds(storedIds.filter((storedId) => storedId !== id));
 		}
-
-		router.push(`${pathname}?${newParams.toString()}`);
 	}
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: This is wrong
 	const context: Context = useMemo(() => ({ isToggled, toggle }), [isToggled, toggle]);
 
 	return <TogglesContext.Provider value={context}>{children}</TogglesContext.Provider>;
-}
-
-export function useToggle(id: ToggleId): [boolean, () => void] {
-	const context = useContext(TogglesContext);
-	const toggle = context.toggle;
-	const isToggled = context.isToggled;
-
-	return [isToggled(id), () => toggle(id)];
 }
