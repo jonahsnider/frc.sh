@@ -1,7 +1,7 @@
 'use client';
 
-import { useLocalStorage } from '@uidotdev/usehooks';
-import { PropsWithChildren, createContext, useMemo } from 'react';
+import { useSet } from '@uidotdev/usehooks';
+import { PropsWithChildren, createContext, useEffect, useMemo } from 'react';
 
 export enum ToggleId {
 	Java = 'java',
@@ -22,22 +22,42 @@ export const TogglesContext = createContext<Context>({
 const LOCAL_STORAGE_KEY = 'toggles';
 type LocalStorageToggles = ToggleId[];
 
+const DEFAULT_TOGGLES: LocalStorageToggles = [ToggleId.Java];
+
 export function TogglesProvider({ children }: PropsWithChildren) {
-	const [storedIds, setStoredIds] = useLocalStorage<LocalStorageToggles>(LOCAL_STORAGE_KEY, Object.values(ToggleId));
+	// For server side rendering
+	const maybeLocalStorage = globalThis.localStorage as Storage | undefined;
+
+	const rawStoredIds = maybeLocalStorage?.getItem(LOCAL_STORAGE_KEY);
+	const storedIds = rawStoredIds ? (JSON.parse(rawStoredIds) as LocalStorageToggles) : DEFAULT_TOGGLES;
+	const enabledIds = useSet<ToggleId>(storedIds);
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run once on mount
+	useEffect(() => {
+		const storedToggles = maybeLocalStorage?.getItem(LOCAL_STORAGE_KEY) ?? JSON.stringify([]);
+
+		const parsedToggles = JSON.parse(storedToggles) as LocalStorageToggles;
+
+		for (const id of parsedToggles) {
+			enabledIds.add(id);
+		}
+	}, []);
 
 	function isToggled(id: ToggleId): boolean {
-		return storedIds.includes(id);
+		return enabledIds.has(id);
 	}
 
 	function toggle(id: ToggleId): void {
 		const newValue = !isToggled(id);
 
 		if (newValue) {
-			setStoredIds([...storedIds, id]);
+			enabledIds.add(id);
 		} else {
-			setStoredIds(storedIds.filter((storedId) => storedId !== id));
+			enabledIds.delete(id);
 		}
 	}
+
+	maybeLocalStorage?.setItem(LOCAL_STORAGE_KEY, JSON.stringify([...enabledIds]));
 
 	// biome-ignore lint/correctness/useExhaustiveDependencies: This is wrong
 	const context: Context = useMemo(() => ({ isToggled, toggle }), [isToggled, toggle]);
