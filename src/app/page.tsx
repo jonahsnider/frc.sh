@@ -1,9 +1,9 @@
 'use client';
 
 import { CategoryId } from '@/content';
-import { ToggleId, TogglesProvider } from './contexts/toggles-context';
-import { PageHeaderTile } from './page-header-tile';
-import { TileGroup } from './tile-group';
+import { PageHeaderTile } from '../components/page-header-tile';
+import { TileGroup } from '../components/tile-group';
+import { ToggleId, TogglesProvider } from '../contexts/toggles-context';
 
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {

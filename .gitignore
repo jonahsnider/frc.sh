@@ -247,3 +247,6 @@ service-account-key.json
 # Vercel
 .vercel
 .env*.local
+
+# Generated service worker
+public/sw.js

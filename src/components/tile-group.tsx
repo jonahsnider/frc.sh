@@ -3,7 +3,7 @@
 import { CategoryId } from '@/content';
 import clsx from 'clsx';
 import { useContext } from 'react';
-import { ToggleId, TogglesContext } from './contexts/toggles-context';
+import { ToggleId, TogglesContext } from '../contexts/toggles-context';
 import { Tile } from './tile';
 import { TileSectionHeading } from './tile-section-heading';
 

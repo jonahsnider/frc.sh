@@ -2,7 +2,7 @@
 
 import clsx from 'clsx';
 import { useContext } from 'react';
-import { ToggleId, TogglesContext } from './contexts/toggles-context';
+import { ToggleId, TogglesContext } from '../contexts/toggles-context';
 import { Toggle } from './toggle';
 
 type ToggleContent = {

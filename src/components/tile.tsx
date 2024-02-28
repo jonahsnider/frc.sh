@@ -1,9 +1,9 @@
 'use client';
 
 import { CategoryId } from '@/content';
+import { usePlausible } from '@/hooks/plausible';
 import { track } from '@vercel/analytics';
 import clsx from 'clsx';
-import { usePlausible } from './hooks/plausible';
 
 type Props = {
 	category: CategoryId;
