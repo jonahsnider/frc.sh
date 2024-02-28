@@ -32,7 +32,7 @@
 		}
 	],
 	"name": "frc.sh",
-	"orientation": "any",
+	"orientation": "natural",
 	"short_name": "frc.sh",
 	"start_url": "/",
 	"theme_color": "#171717"
