@@ -10,7 +10,7 @@ type Props = {
 
 export function Toggle({ className, children, onClick, enabled }: PropsWithChildren<Props>) {
 	return (
-		<div className='flex flex-col justify-center items-center text-xl gap-1'>
+		<div className='flex flex-col justify-center items-center text-lg gap-1'>
 			{children}
 
 			<Switch
