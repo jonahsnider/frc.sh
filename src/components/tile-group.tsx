@@ -34,7 +34,7 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 		<>
 			<TileSectionHeading
 				className={clsx(
-					'bg-opacity-15',
+					'bg-opacity-10',
 					{
 						'bg-ctre': category === CategoryId.Ctre,
 						'bg-advantagekit': category === CategoryId.Advantagekit,
