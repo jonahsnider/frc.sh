@@ -2,6 +2,7 @@
 
 import { CategoryId } from '@/content';
 import { usePlausible } from '@/hooks/plausible';
+import { Card, Text } from '@radix-ui/themes';
 import { track } from '@vercel/analytics';
 import clsx from 'clsx';
 
@@ -9,7 +10,7 @@ type Props = {
 	category: CategoryId;
 	url: string;
 	name: string;
-	className: string;
+	className?: string;
 	parentTitle: string;
 };
 
@@ -17,29 +18,35 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 	const plausible = usePlausible();
 
 	return (
-		// biome-ignore lint/a11y/useValidAnchor: The element has a valid href, the onClick handler isn't used for navigation
-		<a
+		<Card
+			asChild={true}
 			className={clsx(
-				'col-span-1 row-span-1 flex items-center justify-center rounded-lg border-2 border-opacity-75 bg-opacity-10 px-2 py-8 text-center text-2xl shadow outline-none transition-all hover:border-opacity-100 hover:bg-opacity-20 focus:bg-opacity-20 active:bg-opacity-30 lg:text-3xl',
 				{
-					'border-ctre bg-ctre shadow-ctre': category === CategoryId.Ctre,
-					'border-advantagekit bg-advantagekit shadow-advantagekit': category === CategoryId.Advantagekit,
-					'border-pathplanner bg-pathplanner shadow-pathplanner': category === CategoryId.Pathplanner,
-					'border-wpilib bg-wpilib shadow-wpilib': category === CategoryId.Wpilib,
-					'border-rev bg-rev shadow-rev': category === CategoryId.Rev,
-					'border-limelight bg-limelight shadow-limelight': category === CategoryId.Limelight,
-					'border-photonvision bg-photonvision shadow-photonvision': category === CategoryId.Photonvision,
-					'border-first-sky-blue bg-first-sky-blue shadow-first-sky-blue': category === CategoryId.First,
+					'bg-ctre': category === CategoryId.Ctre,
+					'bg-advantagekit': category === CategoryId.Advantagekit,
+					'bg-pathplanner': category === CategoryId.Pathplanner,
+					'bg-wpilib': category === CategoryId.Wpilib,
+					'bg-rev': category === CategoryId.Rev,
+					'bg-limelight': category === CategoryId.Limelight,
+					'bg-photonvision': category === CategoryId.Photonvision,
+					'bg-first-sky-blue': category === CategoryId.First,
 				},
+				'col-span-1 bg-opacity-30 hover:bg-opacity-35',
 				className,
 			)}
-			href={url}
-			onClick={() => {
-				plausible('Click tile', { props: { name: `${parentTitle} ${name}` } });
-				track('Click tile', { name: `${parentTitle} ${name}` });
-			}}
 		>
-			{name}
-		</a>
+			<Text asChild={true} size='6' align='center'>
+				<a
+					href={url}
+					onClick={() => {
+						plausible('Click tile', { props: { name: `${parentTitle} ${name}` } });
+						track('Click tile', { name: `${parentTitle} ${name}` });
+					}}
+					className='flex items-center justify-center py-rx-6'
+				>
+					{name}
+				</a>
+			</Text>
+		</Card>
 	);
 }

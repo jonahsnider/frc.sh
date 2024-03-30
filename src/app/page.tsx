@@ -8,14 +8,14 @@ import { ToggleId, TogglesProvider } from '../contexts/toggles-context';
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {
 	return (
-		<main className='flex min-h-screen w-full flex-col gap-4 p-4 md:grid md:grid-cols-2 lg:grid-flow-row-dense lg:grid-cols-3 xl:grid-cols-4'>
+		<main className='grid min-h-screen w-full grid-cols-1 gap-rx-4 p-rx-4 sm:grid-flow-row-dense md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2'>
 			<TogglesProvider>
 				<PageHeaderTile />
 
 				<TileGroup
 					category={CategoryId.Ctre}
-					className='lg:col-start-1'
 					title='CTR Electronics'
+					className='sm:col-start-1'
 					tiles={[
 						{ name: 'Docs', url: 'https://pro.docs.ctr-electronics.com/en/latest/' },
 						{ name: 'Examples', url: 'https://github.com/CrossTheRoadElec/Phoenix6-Examples' },
@@ -43,8 +43,8 @@ export default function Home() {
 
 				<TileGroup
 					category={CategoryId.Rev}
-					className='lg:col-start-2'
 					title='REV'
+					className='sm:col-start-2'
 					tiles={[
 						{ name: 'Docs', url: 'https://docs.revrobotics.com/brushless' },
 						{ name: 'Examples', url: 'https://github.com/REVrobotics/SPARK-MAX-Examples/tree/master' },
@@ -72,8 +72,8 @@ export default function Home() {
 
 				<TileGroup
 					category={CategoryId.Wpilib}
-					className='lg:col-start-3'
 					title='WPILib'
+					className='sm:col-start-3'
 					tiles={[
 						{ name: 'Docs', url: 'https://docs.wpilib.org/en/stable/' },
 						{
@@ -105,18 +105,23 @@ export default function Home() {
 				/>
 
 				<TileGroup
-					category={CategoryId.Advantagekit}
-					className='lg:col-start-2 xl:col-start-4'
-					title='AdvantageKit'
-					tiles={[
-						{ name: 'Docs', url: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme', toggle: ToggleId.Java },
-					]}
+					category={CategoryId.Limelight}
+					title='Limelight'
+					className='md:col-start-4 sm:col-start-2'
+					tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
+				/>
+
+				<TileGroup
+					category={CategoryId.Photonvision}
+					title='PhotonVision'
+					className='md:col-start-4 sm:col-start-3'
+					tiles={[{ name: 'Docs', url: 'https://docs.photonvision.org/en/latest/' }]}
 				/>
 
 				<TileGroup
 					category={CategoryId.Pathplanner}
-					className='lg:col-start-1 xl:col-start-4'
 					title='PathPlanner'
+					className='sm:col-start-3'
 					tiles={[
 						{ name: 'Docs', url: 'https://pathplanner.dev/home.html' },
 						{ name: 'Examples', url: 'https://github.com/mjansen4857/pathplanner/tree/main/examples' },
@@ -124,23 +129,9 @@ export default function Home() {
 				/>
 
 				<TileGroup
-					category={CategoryId.Limelight}
-					className='lg:col-start-3 xl:col-start-3'
-					title='Limelight'
-					tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
-				/>
-
-				<TileGroup
-					category={CategoryId.Photonvision}
-					className='lg:col-start-2 xl:col-start-4'
-					title='PhotonVision'
-					tiles={[{ name: 'Docs', url: 'https://docs.photonvision.org/en/latest/' }]}
-				/>
-
-				<TileGroup
 					category={CategoryId.First}
-					className='lg:col-start-1 xl:col-start-1'
 					title='FIRST'
+					className='sm:col-start-1'
 					tiles={[
 						{
 							name: 'Game manual PDF',
@@ -149,6 +140,19 @@ export default function Home() {
 						{
 							name: 'Field layout and marking PDF',
 							url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`,
+						},
+					]}
+				/>
+
+				<TileGroup
+					category={CategoryId.Advantagekit}
+					title='AdvantageKit'
+					className='md:col-start-4 sm:col-start-2'
+					tiles={[
+						{
+							name: 'Docs',
+							url: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme',
+							toggle: ToggleId.Java,
 						},
 					]}
 				/>

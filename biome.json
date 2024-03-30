@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.0.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.6.3/schema.json",
 	"files": {
 		"ignore": [".next", "node_modules", ".vercel", "out", "public/sw.js"]
 	},
@@ -23,7 +23,12 @@
 		"rules": {
 			"all": true,
 			"nursery": {
-				"all": false
+				"useSortedClasses": {
+					"options": {
+						"functions": ["clsx"]
+					},
+					"level": "error"
+				}
 			},
 			"style": {
 				"all": true,

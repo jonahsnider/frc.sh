@@ -1,9 +1,10 @@
 'use client';
 
 import { CategoryId } from '@/content';
+import { Heading } from '@radix-ui/themes';
 import clsx from 'clsx';
 import { useContext } from 'react';
-import { ToggleId, TogglesContext } from '../contexts/toggles-context';
+import { type ToggleId, TogglesContext } from '../contexts/toggles-context';
 import { Tile } from './tile';
 import { TileSectionHeading } from './tile-section-heading';
 
@@ -17,7 +18,7 @@ type Props = {
 	title: string;
 	category: CategoryId;
 	tiles: Entry[];
-	className: string;
+	className?: string;
 };
 
 export function TileGroup({ category, className, tiles, title }: Props) {
@@ -47,7 +48,9 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 					className,
 				)}
 			>
-				{title}
+				<Heading as='h2' size='6'>
+					{title}
+				</Heading>
 			</TileSectionHeading>
 			{filteredTiles.map(({ name, url }) => (
 				<Tile key={name} className={className} category={category} name={name} url={url} parentTitle={title} />

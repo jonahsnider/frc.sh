@@ -1,3 +1,168 @@
-@tailwind base;
+@import "tailwindcss/base";
+@import "@radix-ui/themes/styles.css";
+
 @tailwind components;
 @tailwind utilities;
+
+:root,
+.light,
+.light-theme {
+	--red-1: #fffcfc;
+	--red-2: #fff8f7;
+	--red-3: #feebea;
+	--red-4: #ffdcd8;
+	--red-5: #ffcec9;
+	--red-6: #fcbeb8;
+	--red-7: #f3aaa4;
+	--red-8: #ea9089;
+	--red-9: #591616;
+	--red-10: #6f2b28;
+	--red-11: #ac5853;
+	--red-12: #611e1d;
+
+	--red-a1: #ff000003;
+	--red-a2: #ff200008;
+	--red-a3: #f30d0015;
+	--red-a4: #ff1b0027;
+	--red-a5: #ff180036;
+	--red-a6: #f5160047;
+	--red-a7: #de11015b;
+	--red-a8: #d2100076;
+	--red-a9: #490000e9;
+	--red-a10: #540400d7;
+	--red-a11: #840800ac;
+	--red-a12: #4d0100e2;
+
+	--red-contrast: #fff;
+	--red-surface: #fff6f5cc;
+	--red-indicator: #591616;
+	--red-track: #591616;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root,
+		.light,
+		.light-theme {
+			--red-1: oklch(0.994 0.003 24.81);
+			--red-2: oklch(0.983 0.008 24.81);
+			--red-3: oklch(0.956 0.02 24.81);
+			--red-4: oklch(0.928 0.045 24.81);
+			--red-5: oklch(0.895 0.06 24.81);
+			--red-6: oklch(0.856 0.072 24.81);
+			--red-7: oklch(0.806 0.087 24.81);
+			--red-8: oklch(0.744 0.11 24.81);
+			--red-9: oklch(0.314 0.098 24.81);
+			--red-10: oklch(0.386 0.098 24.81);
+			--red-11: oklch(0.559 0.11 24.81);
+			--red-12: oklch(0.341 0.098 24.81);
+
+			--red-a1: color(display-p3 0.675 0.024 0.024 / 0.012);
+			--red-a2: color(display-p3 0.878 0.145 0.02 / 0.032);
+			--red-a3: color(display-p3 0.812 0.106 0.008 / 0.083);
+			--red-a4: color(display-p3 0.843 0.114 0.008 / 0.15);
+			--red-a5: color(display-p3 0.851 0.118 0.004 / 0.208);
+			--red-a6: color(display-p3 0.816 0.09 0.004 / 0.271);
+			--red-a7: color(display-p3 0.741 0.082 0.004 / 0.35);
+			--red-a8: color(display-p3 0.706 0.071 0.004 / 0.451);
+			--red-a9: color(display-p3 0.247 0.008 0 / 0.902);
+			--red-a10: color(display-p3 0.282 0.02 0 / 0.832);
+			--red-a11: color(display-p3 0.443 0.035 0 / 0.663);
+			--red-a12: color(display-p3 0.255 0.012 0 / 0.875);
+
+			--red-contrast: #fff;
+			--red-surface: color(display-p3 0.996 0.965 0.961 / 0.8);
+			--red-indicator: oklch(0.314 0.098 24.81);
+			--red-track: oklch(0.314 0.098 24.81);
+		}
+	}
+}
+
+.dark,
+.dark-theme {
+	--red-1: #160f0e;
+	--red-2: #1f1413;
+	--red-3: #391614;
+	--red-4: #4e1414;
+	--red-5: #5e1b1a;
+	--red-6: #6e2826;
+	--red-7: #873835;
+	--red-8: #ae4a46;
+	--red-9: #d25f5a;
+	--red-10: #c4524e;
+	--red-11: #ff9088;
+	--red-12: #fcd2ce;
+
+	--red-a1: #e6000006;
+	--red-a2: #ff44330f;
+	--red-a3: #ff2f232b;
+	--red-a4: #fd1c1c42;
+	--red-a5: #fe302d53;
+	--red-a6: #ff4c4764;
+	--red-a7: #fd5f597f;
+	--red-a8: #fe6761a9;
+	--red-a9: #ff716bcf;
+	--red-a10: #ff6862c0;
+	--red-a11: #ff9088;
+	--red-a12: #ffd5d0fc;
+
+	--red-contrast: #fff;
+	--red-surface: #2d171580;
+	--red-indicator: #d25f5a;
+	--red-track: #d25f5a;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		.dark,
+		.dark-theme {
+			--red-1: oklch(0.178 0.012 24.81);
+			--red-2: oklch(0.206 0.017 24.81);
+			--red-3: oklch(0.252 0.056 24.81);
+			--red-4: oklch(0.29 0.088 24.81);
+			--red-5: oklch(0.331 0.098 24.81);
+			--red-6: oklch(0.38 0.101 24.81);
+			--red-7: oklch(0.448 0.108 24.81);
+			--red-8: oklch(0.539 0.132 24.81);
+			--red-9: oklch(0.627 0.147 24.81);
+			--red-10: oklch(0.585 0.147 24.81);
+			--red-11: oklch(0.784 0.147 24.81);
+			--red-12: oklch(0.899 0.047 24.81);
+
+			--red-a1: color(display-p3 0.992 0 0 / 0.017);
+			--red-a2: color(display-p3 0.992 0.298 0.224 / 0.051);
+			--red-a3: color(display-p3 0.996 0.251 0.173 / 0.152);
+			--red-a4: color(display-p3 1 0.188 0.157 / 0.227);
+			--red-a5: color(display-p3 1 0.271 0.231 / 0.29);
+			--red-a6: color(display-p3 1 0.365 0.333 / 0.358);
+			--red-a7: color(display-p3 1 0.447 0.404 / 0.454);
+			--red-a8: color(display-p3 0.996 0.471 0.431 / 0.61);
+			--red-a9: color(display-p3 1 0.51 0.471 / 0.753);
+			--red-a10: color(display-p3 1 0.475 0.435 / 0.694);
+			--red-a11: color(display-p3 1 0.624 0.58 / 0.937);
+			--red-a12: color(display-p3 1 0.863 0.843 / 0.958);
+
+			--red-contrast: #fff;
+			--red-surface: color(display-p3 0.157 0.094 0.086 / 0.5);
+			--red-indicator: oklch(0.627 0.147 24.81);
+			--red-track: oklch(0.627 0.147 24.81);
+		}
+	}
+}
+
+.radix-themes {
+	--code-font-family: var(--font-fira-mono);
+}
+
+:root,
+.light,
+.light-theme,
+.radix-themes {
+	--color-background: #fffcfc;
+}
+
+.dark,
+.dark-theme,
+:is(.dark, .dark-theme) :where(.radix-themes:not(.light, .light-theme)) {
+	--color-background: #160f0e;
+}

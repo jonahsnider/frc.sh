@@ -1,3 +1,4 @@
+import { Code, Heading, Link, Text } from '@radix-ui/themes';
 import { TileHeading } from './tile-heading';
 import { Toggles } from './toggles';
 
@@ -6,26 +7,20 @@ export function PageHeaderTile() {
 		<TileHeading>
 			<div className='flex flex-col items-center justify-center gap-4'>
 				<div className='flex flex-col items-center justify-center gap-1'>
-					<h1 className='text-4xl'>
+					<Heading as='h1' size='8'>
 						frc
-						<span className='font-mono'>
+						<Code variant='ghost'>
 							<span className='-tracking-widest text-first-red'>.</span>
 							<span className='text-first-white'>s</span>
 							<span className='text-first-blue'>h</span>
-						</span>
-					</h1>
-					<p className='text-lg'>
-						Created by{' '}
-						<a href='https://jonahsnider.com' className='underline'>
-							Jonah Snider
-						</a>
-					</p>
-					<p className='text-lg'>
-						View source on{' '}
-						<a href='https://github.com/jonahsnider/frc.sh' className='underline'>
-							GitHub
-						</a>
-					</p>
+						</Code>
+					</Heading>
+					<Text as='p'>
+						Created by <Link href='https://jonahsnider.com'>Jonah Snider</Link>
+					</Text>
+					<Text as='p'>
+						View source on <Link href='https://github.com/jonahsnider/frc.sh'>GitHub</Link>
+					</Text>
 				</div>
 
 				<Toggles />

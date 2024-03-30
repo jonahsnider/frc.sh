@@ -2,7 +2,6 @@ import { defaultCache } from '@serwist/next/browser';
 import type { PrecacheEntry } from '@serwist/precaching';
 import { installSerwist } from '@serwist/sw';
 
-// biome-ignore lint/correctness/noUndeclaredVariables: This is a global type
 declare const self: ServiceWorkerGlobalScope & {
 	// Change this attribute's name to your `injectionPoint`.
 	// `injectionPoint` is an InjectManifest option.
