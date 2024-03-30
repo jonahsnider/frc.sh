@@ -124,17 +124,17 @@ export default function Home() {
 				/>
 
 				<TileGroup
+					category={CategoryId.Limelight}
+					className='lg:col-start-3 xl:col-start-3'
+					title='Limelight'
+					tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
+				/>
+
+				<TileGroup
 					category={CategoryId.Photonvision}
 					className='lg:col-start-2 xl:col-start-4'
 					title='PhotonVision'
 					tiles={[{ name: 'Docs', url: 'https://docs.photonvision.org/en/latest/' }]}
-				/>
-
-				<TileGroup
-					category={CategoryId.Limelight}
-					className='lg:col-start-3 xl:col-start-4'
-					title='Limelight'
-					tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
 				/>
 
 				<TileGroup
