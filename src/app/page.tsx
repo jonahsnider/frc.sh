@@ -42,21 +42,6 @@ export default function Home() {
 					/>
 
 					<TileGroup
-						category={CategoryId.First}
-						title='FIRST'
-						tiles={[
-							{
-								name: 'Game manual PDF',
-								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/Manual/${new Date().getFullYear()}GameManual.pdf`,
-							},
-							{
-								name: 'Field layout and marking PDF',
-								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`,
-							},
-						]}
-					/>
-
-					<TileGroup
 						category={CategoryId.Rev}
 						title='REV'
 						tiles={[
@@ -118,15 +103,6 @@ export default function Home() {
 					/>
 
 					<TileGroup
-						category={CategoryId.Pathplanner}
-						title='PathPlanner'
-						tiles={[
-							{ name: 'Docs', url: 'https://pathplanner.dev/home.html' },
-							{ name: 'Examples', url: 'https://github.com/mjansen4857/pathplanner/tree/main/examples' },
-						]}
-					/>
-
-					<TileGroup
 						category={CategoryId.Limelight}
 						title='Limelight'
 						tiles={[{ name: 'Docs', url: 'https://docs.limelightvision.io/' }]}
@@ -139,6 +115,15 @@ export default function Home() {
 					/>
 
 					<TileGroup
+						category={CategoryId.Pathplanner}
+						title='PathPlanner'
+						tiles={[
+							{ name: 'Docs', url: 'https://pathplanner.dev/home.html' },
+							{ name: 'Examples', url: 'https://github.com/mjansen4857/pathplanner/tree/main/examples' },
+						]}
+					/>
+
+					<TileGroup
 						category={CategoryId.Advantagekit}
 						title='AdvantageKit'
 						tiles={[
@@ -146,6 +131,21 @@ export default function Home() {
 								name: 'Docs',
 								url: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme',
 								toggle: ToggleId.Java,
+							},
+						]}
+					/>
+
+					<TileGroup
+						category={CategoryId.First}
+						title='FIRST'
+						tiles={[
+							{
+								name: 'Game manual PDF',
+								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/Manual/${new Date().getFullYear()}GameManual.pdf`,
+							},
+							{
+								name: 'Field layout and marking PDF',
+								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`,
 							},
 						]}
 					/>
