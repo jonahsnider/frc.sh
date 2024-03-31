@@ -1,12 +1,11 @@
 'use client';
 
 import { CategoryId } from '@/content';
-import { Heading } from '@radix-ui/themes';
+import { Card, Heading, Theme, type ThemeProps } from '@radix-ui/themes';
 import clsx from 'clsx';
 import { useContext } from 'react';
 import { type ToggleId, TogglesContext } from '../contexts/toggles-context';
 import { Tile } from './tile';
-import { TileSectionHeading } from './tile-section-heading';
 
 type Entry = {
 	name: string;
@@ -18,10 +17,32 @@ type Props = {
 	title: string;
 	category: CategoryId;
 	tiles: Entry[];
-	className?: string;
 };
 
-export function TileGroup({ category, className, tiles, title }: Props) {
+function getAccentColor(category: CategoryId): ThemeProps['accentColor'] {
+	switch (category) {
+		case CategoryId.Ctre:
+			return 'lime';
+		case CategoryId.Advantagekit:
+			return 'yellow';
+		case CategoryId.Limelight:
+			return 'lime';
+		case CategoryId.First:
+			return 'sky';
+		case CategoryId.Pathplanner:
+			return 'indigo';
+		case CategoryId.Rev:
+			return 'orange';
+		case CategoryId.Wpilib:
+			return 'blue';
+		case CategoryId.Photonvision:
+			return 'blue';
+		default:
+			return undefined;
+	}
+}
+
+export function TileGroup({ category, tiles, title }: Props) {
 	const togglesContext = useContext(TogglesContext);
 
 	const filteredTiles = tiles.filter((tile) => (tile.toggle ? togglesContext.isToggled(tile.toggle) : true));
@@ -30,11 +51,13 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 		return undefined;
 	}
 
+	const childTilesCount = filteredTiles.length + 1;
+
 	return (
-		<>
-			<TileSectionHeading
+		<Theme accentColor={getAccentColor(category)} asChild={true}>
+			<Card
 				className={clsx(
-					'bg-opacity-10',
+					'col-span-1 grid grid-cols-subgrid gap-rx-4 bg-opacity-10 pt-rx-4 sm:col-span-1 xs:col-span-2',
 					{
 						'bg-ctre': category === CategoryId.Ctre,
 						'bg-advantagekit': category === CategoryId.Advantagekit,
@@ -45,16 +68,19 @@ export function TileGroup({ category, className, tiles, title }: Props) {
 						'bg-photonvision': category === CategoryId.Photonvision,
 						'bg-first-sky-blue': category === CategoryId.First,
 					},
-					className,
 				)}
+				style={{
+					gridRow: `span ${childTilesCount} / span ${childTilesCount}`,
+				}}
 			>
-				<Heading as='h2' size='6'>
+				<Heading as='h2' size='7' align='center' className='col-span-1 w-full sm:col-span-1 xs:col-span-2'>
 					{title}
 				</Heading>
-			</TileSectionHeading>
-			{filteredTiles.map(({ name, url }) => (
-				<Tile key={name} className={className} category={category} name={name} url={url} parentTitle={title} />
-			))}
-		</>
+
+				{filteredTiles.map(({ name, url }) => (
+					<Tile key={name} category={category} name={name} url={url} parentTitle={title} />
+				))}
+			</Card>
+		</Theme>
 	);
 }

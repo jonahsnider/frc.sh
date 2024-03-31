@@ -3,7 +3,7 @@ import { Toggles } from './toggles';
 
 export function PageHeaderTile() {
 	return (
-		<>
+		<div className='grid grid-cols-1 gap-rx-4 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2'>
 			<Card className='col-span-1 flex flex-col items-center justify-center gap-1'>
 				<Text as='p'>
 					Created by <Link href='https://jonahsnider.com'>Jonah Snider</Link>
@@ -42,6 +42,6 @@ export function PageHeaderTile() {
 					FRC Colors
 				</Link>
 			</Card>
-		</>
+		</div>
 	);
 }
