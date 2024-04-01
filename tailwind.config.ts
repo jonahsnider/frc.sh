@@ -8,6 +8,7 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	presets: [radixThemePreset],
+	darkMode: 'class',
 	theme: {
 		extend: {
 			colors: {

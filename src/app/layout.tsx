@@ -3,6 +3,7 @@ import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import PlausibleProvider from 'next-plausible';
+import { ThemeProvider } from 'next-themes';
 import { Fira_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -29,9 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<PlausibleProvider domain='frc.sh' />
 			</head>
 			<body className={clsx(firaMono.variable)}>
-				<Theme accentColor='red' grayColor='mauve' appearance='dark'>
-					<Container>{children}</Container>
-				</Theme>
+				<ThemeProvider attribute='class' enableSystem={true}>
+					<Theme accentColor='jade' grayColor='sage'>
+						<Container>{children}</Container>
+					</Theme>
+				</ThemeProvider>
 
 				<Analytics />
 			</body>
