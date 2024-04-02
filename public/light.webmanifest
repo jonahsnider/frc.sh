@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
+	"background_color": "#ffffff",
+	"description": "Quick links for FRC programming & software resources.",
+	"display": "standalone",
+	"icons": [
+		{
+			"purpose": "maskable",
+			"sizes": "512x512",
+			"src": "/icons/maskable-512x512.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "192x192",
+			"src": "/icons/transparent-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "64x64",
+			"src": "/icons/transparent-64x64.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/icons/transparent-512x512.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "any",
+			"src": "/logo.svg",
+			"type": "image/svg+xml"
+		}
+	],
+	"id": "/",
+	"name": "frc.sh",
+	"short_name": "frc.sh",
+	"start_url": "/",
+	"theme_color": "#160f0e"
+}

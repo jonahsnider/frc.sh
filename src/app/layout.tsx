@@ -1,7 +1,8 @@
+import { WebmanifestMetaTag } from '@/components/webmanifest-meta-tag';
 import { Container, Theme } from '@radix-ui/themes';
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import PlausibleProvider from 'next-plausible';
 import { ThemeProvider } from 'next-themes';
 import { Fira_Mono } from 'next/font/google';
@@ -20,6 +21,14 @@ export const metadata: Metadata = {
 		siteName: 'frc.sh',
 		description: 'Quick links for FRC programming & software resources.',
 	},
+	manifest: '/light.webmanifest',
+};
+
+export const viewport: Viewport = {
+	themeColor: {
+		color: '#29A383',
+	},
+	colorScheme: 'dark light',
 };
 
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
@@ -34,6 +43,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 					<Theme accentColor='jade' grayColor='sage'>
 						<Container>{children}</Container>
 					</Theme>
+
+					<WebmanifestMetaTag />
 				</ThemeProvider>
 
 				<Analytics />

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/web-manifest-combined.json",
-	"background_color": "#160f0e",
+	"background_color": "#101211",
 	"description": "Quick links for FRC programming & software resources.",
 	"display": "standalone",
 	"icons": [
@@ -35,5 +35,5 @@
 	"name": "frc.sh",
 	"short_name": "frc.sh",
 	"start_url": "/",
-	"theme_color": "#160f0e"
+	"theme_color": "#29A383"
 }

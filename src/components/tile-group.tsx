@@ -57,7 +57,7 @@ export function TileGroup({ category, tiles, title }: Props) {
 		<Theme accentColor={getAccentColor(category)} asChild={true}>
 			<Card
 				className={clsx(
-					'col-span-1 grid grid-cols-subgrid gap-rx-4 bg-opacity-10 pt-rx-4 sm:col-span-1 xs:col-span-2',
+					'col-span-1 grid grid-cols-subgrid gap-rx-4 bg-opacity-40 pt-rx-4 sm:col-span-1 xs:col-span-2 dark:bg-opacity-10',
 					{
 						'bg-ctre': category === CategoryId.Ctre,
 						'bg-advantagekit': category === CategoryId.Advantagekit,

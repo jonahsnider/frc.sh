@@ -20,7 +20,7 @@ export function PageHeaderTile() {
 						frc
 						<Code variant='ghost' className='-tracking-widest'>
 							<span className='text-first-red'>.</span>
-							<span className='text-first-white'>s</span>
+							<span className='dark:text-first-white'>s</span>
 							<span className='text-first-blue'>h</span>
 						</Code>
 					</Heading>

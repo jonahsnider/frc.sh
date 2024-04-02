@@ -31,7 +31,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 					'bg-photonvision': category === CategoryId.Photonvision,
 					'bg-first-sky-blue': category === CategoryId.First,
 				},
-				'col-span-1 bg-opacity-30 hover:bg-opacity-35',
+				'col-span-1 dark:bg-opacity-30 dark:hover:bg-opacity-35 hover:bg-opacity-90',
 				className,
 			)}
 		>
