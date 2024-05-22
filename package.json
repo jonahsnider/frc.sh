@@ -36,5 +36,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.7.3"
-	}
+	},
+	"packageManager": "bun@1.1.9"
 }
