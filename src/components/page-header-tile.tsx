@@ -18,7 +18,7 @@ export function PageHeaderTile() {
 				<div className='flex flex-col items-center justify-center gap-1'>
 					<Heading as='h1' size='8'>
 						frc
-						<Code variant='ghost' className='-tracking-widest'>
+						<Code variant='ghost' className='-tracking-[0.1em]'>
 							<span className='text-first-red'>.</span>
 							<span className='dark:text-first-white'>s</span>
 							<span className='text-first-blue'>h</span>
