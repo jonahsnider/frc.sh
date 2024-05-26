@@ -41,7 +41,7 @@ export const viewport: Viewport = {
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en'>
+		<html lang='en' suppressHydrationWarning={true}>
 			<head>
 				<PlausibleProvider domain='frc.sh' />
 			</head>
