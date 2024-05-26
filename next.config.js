@@ -20,7 +20,11 @@ const nextConfig = withSerwist(
 			{ permanent: false, source: '/photonvision', destination: 'https://docs.photonvision.org/en/latest/' },
 			{ permanent: false, source: '/wpilib', destination: 'https://docs.wpilib.org/en/stable/' },
 			{ permanent: false, source: '/doglog', destination: 'https://doglog.dev/' },
-			{ permanent: false, source: '/advantagekit', destination: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme' },
+			{
+				permanent: false,
+				source: '/advantagekit',
+				destination: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme',
+			},
 		],
 	}),
 );

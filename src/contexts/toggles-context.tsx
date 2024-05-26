@@ -61,7 +61,6 @@ export function TogglesProvider({ children }: PropsWithChildren) {
 		maybeLocalStorage?.setItem(LOCAL_STORAGE_KEY, JSON.stringify([...enabledIds]));
 	}, [[...enabledIds].join(''), maybeLocalStorage]);
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: This is wrong
 	const context: Context = useMemo(() => ({ isToggled, toggle }), [isToggled, toggle]);
 
 	return <TogglesContext.Provider value={context}>{children}</TogglesContext.Provider>;
