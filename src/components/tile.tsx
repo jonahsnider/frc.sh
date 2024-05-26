@@ -23,6 +23,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 			className={clsx(
 				{
 					'bg-ctre': category === CategoryId.Ctre,
+					'bg-doglog': category === CategoryId.Doglog,
 					'bg-advantagekit': category === CategoryId.Advantagekit,
 					'bg-pathplanner': category === CategoryId.Pathplanner,
 					'bg-choreo': category === CategoryId.Choreo,

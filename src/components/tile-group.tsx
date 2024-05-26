@@ -23,6 +23,8 @@ function getAccentColor(category: CategoryId): ThemeProps['accentColor'] {
 	switch (category) {
 		case CategoryId.Ctre:
 			return 'lime';
+		case CategoryId.Doglog:
+			return 'red';
 		case CategoryId.Advantagekit:
 			return 'yellow';
 		case CategoryId.Limelight:
@@ -62,6 +64,7 @@ export function TileGroup({ category, tiles, title }: Props) {
 					'col-span-1 grid grid-cols-subgrid gap-rx-4 bg-opacity-40 pt-rx-4 sm:col-span-1 xs:col-span-2 dark:bg-opacity-10',
 					{
 						'bg-ctre': category === CategoryId.Ctre,
+						'bg-doglog': category === CategoryId.Doglog,
 						'bg-advantagekit': category === CategoryId.Advantagekit,
 						'bg-pathplanner': category === CategoryId.Pathplanner,
 						'bg-choreo': category === CategoryId.Choreo,

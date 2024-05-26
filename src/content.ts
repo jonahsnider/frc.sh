@@ -4,6 +4,7 @@ export enum CategoryId {
 	Wpilib = 'wpilib',
 	Pathplanner = 'pathplanner',
 	Choreo = 'choreo',
+	Doglog = 'doglog',
 	Advantagekit = 'advantagekit',
 	Limelight = 'limelight',
 	Photonvision = 'photonvision',

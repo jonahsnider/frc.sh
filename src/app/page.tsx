@@ -130,6 +130,23 @@ export default function Home() {
 					/>
 
 					<TileGroup
+						category={CategoryId.Doglog}
+						title='DogLog'
+						tiles={[
+							{
+								name: 'Docs',
+								url: 'https://doglog.dev/',
+								toggle: ToggleId.Java,
+							},
+							{
+								name: 'Javadoc',
+								url: 'https://javadoc.doglog.dev/',
+								toggle: ToggleId.Java,
+							},
+						]}
+					/>
+
+					<TileGroup
 						category={CategoryId.Advantagekit}
 						title='AdvantageKit'
 						tiles={[

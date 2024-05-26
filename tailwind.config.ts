@@ -14,6 +14,7 @@ const config: Config = {
 			colors: {
 				ctre: '#95ca3e',
 				rev: '#f05a28',
+				doglog: '#591616',
 				advantagekit: '#fec20a',
 				pathplanner: '#3f55ce',
 				choreo: '#803cff',
