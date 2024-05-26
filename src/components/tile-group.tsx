@@ -31,6 +31,8 @@ function getAccentColor(category: CategoryId): ThemeProps['accentColor'] {
 			return 'sky';
 		case CategoryId.Pathplanner:
 			return 'indigo';
+		case CategoryId.Choreo:
+			return 'violet';
 		case CategoryId.Rev:
 			return 'orange';
 		case CategoryId.Wpilib:
