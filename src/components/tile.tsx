@@ -25,6 +25,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 					'bg-ctre': category === CategoryId.Ctre,
 					'bg-advantagekit': category === CategoryId.Advantagekit,
 					'bg-pathplanner': category === CategoryId.Pathplanner,
+					'bg-choreo': category === CategoryId.Choreo,
 					'bg-wpilib': category === CategoryId.Wpilib,
 					'bg-rev': category === CategoryId.Rev,
 					'bg-limelight': category === CategoryId.Limelight,

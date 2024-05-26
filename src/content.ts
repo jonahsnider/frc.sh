@@ -3,6 +3,7 @@ export enum CategoryId {
 	Rev = 'rev',
 	Wpilib = 'wpilib',
 	Pathplanner = 'pathplanner',
+	Choreo = 'choreo',
 	Advantagekit = 'advantagekit',
 	Limelight = 'limelight',
 	Photonvision = 'photonvision',

@@ -16,6 +16,7 @@ const config: Config = {
 				rev: '#f05a28',
 				advantagekit: '#fec20a',
 				pathplanner: '#3f55ce',
+				choreo: '#803cff',
 				wpilib: '#013974',
 				limelight: '#65bf0f',
 				photonvision: '#016392',
