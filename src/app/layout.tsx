@@ -7,13 +7,14 @@ import PlausibleProvider from 'next-plausible';
 import { ThemeProvider } from 'next-themes';
 import { Fira_Mono } from 'next/font/google';
 import './globals.css';
+import { metadataBase } from '@/metadata';
 
 const firaMono = Fira_Mono({ weight: ['700'], subsets: ['latin'], variable: '--font-fira-mono' });
 
 export const metadata: Metadata = {
 	title: 'frc.sh',
 	description: 'Quick links for FRC programming & software resources.',
-	metadataBase: new URL('https://frc.sh'),
+	metadataBase,
 	openGraph: {
 		url: 'https://frc.sh',
 		type: 'website',

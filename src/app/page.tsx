@@ -1,8 +1,17 @@
 import { CategoryId } from '@/content';
 import { ToggleId } from '@/contexts/toggles';
+import { metadataBase } from '@/metadata';
+import type { Metadata } from 'next';
 import { PageHeaderTile } from '../components/page-header-tile';
 import { TileGroup } from '../components/tile-group';
 import { TogglesProvider } from '../contexts/toggles-context';
+
+export const metadata: Metadata = {
+	metadataBase,
+	alternates: {
+		canonical: '/',
+	},
+};
 
 // biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function Home() {
