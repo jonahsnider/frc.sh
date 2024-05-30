@@ -2,12 +2,7 @@
 
 import { useSet } from '@uidotdev/usehooks';
 import { type PropsWithChildren, createContext, useEffect, useMemo } from 'react';
-
-export enum ToggleId {
-	Java = 'java',
-	Cpp = 'cpp',
-	Python = 'python',
-}
+import { ToggleId } from './toggles';
 
 type Context = {
 	toggle(id: ToggleId): void;

@@ -1,32 +1,9 @@
 'use client';
 
-import { Switch, type SwitchProps } from '@radix-ui/themes';
+import { TOGGLES, type ToggleId } from '@/contexts/toggles';
+import { Switch } from '@radix-ui/themes';
 import { useContext } from 'react';
-import { ToggleId, TogglesContext } from '../contexts/toggles-context';
-
-type ToggleContent = {
-	urlKey: string;
-	displayName: string;
-	color: SwitchProps['color'];
-};
-
-const TOGGLES: Record<ToggleId, ToggleContent> = {
-	[ToggleId.Java]: {
-		displayName: 'Java',
-		urlKey: 'java',
-		color: 'brown',
-	},
-	[ToggleId.Cpp]: {
-		displayName: 'C++',
-		urlKey: 'cpp',
-		color: 'crimson',
-	},
-	[ToggleId.Python]: {
-		displayName: 'Python',
-		urlKey: 'python',
-		color: 'blue',
-	},
-};
+import { TogglesContext } from '../contexts/toggles-context';
 
 export function Toggles() {
 	const togglesContext = useContext(TogglesContext);
