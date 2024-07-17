@@ -13,7 +13,7 @@
 	"dependencies": {
 		"@radix-ui/themes": "3.1.1",
 		"@serwist/next": "8.4.4",
-		"@serwist/precaching": "9.0.4",
+		"@serwist/precaching": "9.0.5",
 		"@serwist/sw": "8.4.4",
 		"@types/node": "20.14.11",
 		"@types/react": "18.3.3",
