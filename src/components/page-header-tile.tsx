@@ -3,7 +3,7 @@ import { Toggles } from './toggles';
 
 export function PageHeaderTile() {
 	return (
-		<div className='grid grid-cols-1 gap-rx-4 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2'>
+		<div className='grid grid-cols-1 xs:grid-cols-2 gap-rx-4 sm:grid-cols-3 md:grid-cols-4'>
 			<Card className='col-span-1 flex flex-col items-center justify-center gap-1'>
 				<Text as='p' size='3'>
 					Created by <Link href='https://jonahsnider.com'>Jonah Snider</Link>
@@ -14,7 +14,7 @@ export function PageHeaderTile() {
 				</Text>
 			</Card>
 
-			<Card className='col-span-1 row-start-1 md:col-span-2 sm:col-span-1 xs:col-span-2 sm:row-start-auto'>
+			<Card className='col-span-1 xs:col-span-2 row-start-1 sm:col-span-1 sm:row-start-auto md:col-span-2'>
 				<div className='flex flex-col items-center justify-center gap-1'>
 					<Heading as='h1' size='8'>
 						frc

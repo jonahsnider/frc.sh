@@ -7,7 +7,7 @@
 		"dev": "next dev",
 		"generate-icons": "pwa-assets-generator",
 		"lint": "biome check .",
-		"lint:fix": "biome check . --apply-unsafe",
+		"lint:fix": "biome check . --write --unsafe",
 		"start": "next start"
 	},
 	"dependencies": {

@@ -62,7 +62,7 @@ export function TileGroup({ category, tiles, title }: Props) {
 		<Theme accentColor={getAccentColor(category)} asChild={true}>
 			<Card
 				className={clsx(
-					'col-span-1 grid grid-cols-subgrid gap-rx-4 bg-opacity-40 pt-rx-4 sm:col-span-1 xs:col-span-2 dark:bg-opacity-10',
+					'col-span-1 xs:col-span-2 grid grid-cols-subgrid gap-rx-4 bg-opacity-40 pt-rx-4 sm:col-span-1 dark:bg-opacity-10',
 					{
 						'bg-ctre': category === CategoryId.Ctre,
 						'bg-doglog': category === CategoryId.Doglog,
@@ -80,7 +80,7 @@ export function TileGroup({ category, tiles, title }: Props) {
 					gridRow: `span ${childTilesCount} / span ${childTilesCount}`,
 				}}
 			>
-				<Heading as='h2' size='7' align='center' className='col-span-1 w-full sm:col-span-1 xs:col-span-2'>
+				<Heading as='h2' size='7' align='center' className='col-span-1 xs:col-span-2 w-full sm:col-span-1'>
 					{title}
 				</Heading>
 

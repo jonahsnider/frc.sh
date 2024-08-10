@@ -20,7 +20,7 @@ export default function Home() {
 			<TogglesProvider>
 				<PageHeaderTile />
 
-				<div className='grid w-full grid-cols-1 gap-rx-4 sm:grid-flow-row-dense md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2'>
+				<div className='grid w-full grid-cols-1 xs:grid-cols-2 gap-rx-4 sm:grid-flow-row-dense sm:grid-cols-3 md:grid-cols-4'>
 					<TileGroup
 						category={CategoryId.Ctre}
 						title='CTR Electronics'
