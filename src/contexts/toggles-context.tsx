@@ -50,7 +50,7 @@ function storeToggles(toggles: LocalStorageToggles): void {
 
 export function TogglesProvider({ children }: PropsWithChildren) {
 	const [toggleState, setToggleState] = useMutative({
-		toggles: new Set<ToggleId>(),
+		toggles: new Set<ToggleId>(DEFAULT_TOGGLES),
 	});
 
 	useEffect(() => {
