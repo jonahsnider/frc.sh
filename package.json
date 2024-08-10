@@ -7,7 +7,7 @@
 		"dev": "next dev",
 		"generate-icons": "pwa-assets-generator",
 		"lint": "biome check .",
-		"lint:fix": "biome check . --apply-unsafe",
+		"lint:fix": "biome check . --write --unsafe",
 		"start": "next start"
 	},
 	"dependencies": {
@@ -36,7 +36,7 @@
 		"use-mutative": "1.1.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.7.3"
+		"@biomejs/biome": "1.8.3"
 	},
 	"packageManager": "bun@1.1.9"
 }

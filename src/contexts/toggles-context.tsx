@@ -1,8 +1,8 @@
 'use client';
 
 import { type PropsWithChildren, createContext, useCallback, useEffect, useMemo } from 'react';
-import { ToggleId } from './toggles';
 import { useMutative } from 'use-mutative';
+import { ToggleId } from './toggles';
 
 type Context = {
 	toggle(id: ToggleId): void;
