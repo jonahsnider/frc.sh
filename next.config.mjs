@@ -6,8 +6,8 @@
 // 	disable: process.env.NODE_ENV === 'development',
 // });
 
-import { withPlausibleProxy } from 'next-plausible';
 import serwist from '@serwist/next';
+import { withPlausibleProxy } from 'next-plausible';
 
 const withSerwist = serwist({
 	swSrc: 'src/sw.ts',

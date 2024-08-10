@@ -1,6 +1,6 @@
-import { Serwist } from 'serwist';
 import { defaultCache } from '@serwist/next/worker';
 import type { PrecacheEntry } from '@serwist/precaching';
+import { Serwist } from 'serwist';
 
 declare const self: ServiceWorkerGlobalScope & {
 	// Change this attribute's name to your `injectionPoint`.
