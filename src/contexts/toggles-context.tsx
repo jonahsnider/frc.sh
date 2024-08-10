@@ -1,13 +1,19 @@
 'use client';
 
-import { useSet } from '@uidotdev/usehooks';
-import { type PropsWithChildren, createContext, useEffect, useMemo } from 'react';
+import { type PropsWithChildren, createContext, useCallback, useEffect, useMemo } from 'react';
 import { ToggleId } from './toggles';
+import { useMutative } from 'use-mutative';
 
 type Context = {
 	toggle(id: ToggleId): void;
 	isToggled(id: ToggleId): boolean;
 };
+
+type LocalStorageToggles = readonly ToggleId[];
+
+const DEFAULT_TOGGLES: LocalStorageToggles = [ToggleId.Java];
+
+const LOCAL_STORAGE_KEY = 'toggles';
 
 export const TogglesContext = createContext<Context>({
 	isToggled: () => false,
@@ -15,46 +21,61 @@ export const TogglesContext = createContext<Context>({
 	toggle: () => {},
 });
 
-const LOCAL_STORAGE_KEY = 'toggles';
-type LocalStorageToggles = ToggleId[];
+// For server side rendering
+function getLocalStorage(): Storage | undefined {
+	return globalThis.localStorage as Storage | undefined;
+}
 
-const DEFAULT_TOGGLES: LocalStorageToggles = [ToggleId.Java];
+function getInitialToggles(): LocalStorageToggles {
+	const maybeLocalStorage = getLocalStorage();
+
+	if (!maybeLocalStorage) {
+		return DEFAULT_TOGGLES;
+	}
+
+	const storedToggles = maybeLocalStorage.getItem(LOCAL_STORAGE_KEY);
+
+	if (storedToggles === null) {
+		return DEFAULT_TOGGLES;
+	}
+
+	return JSON.parse(storedToggles) as LocalStorageToggles;
+}
+
+function storeToggles(toggles: LocalStorageToggles): void {
+	const maybeLocalStorage = getLocalStorage();
+
+	maybeLocalStorage?.setItem(LOCAL_STORAGE_KEY, JSON.stringify(toggles));
+}
 
 export function TogglesProvider({ children }: PropsWithChildren) {
-	// For server side rendering
-	const maybeLocalStorage = globalThis.localStorage as Storage | undefined;
+	const [toggleState, setToggleState] = useMutative({
+		toggles: new Set<ToggleId>(),
+	});
 
-	const enabledIds = useSet<ToggleId>();
-
-	// biome-ignore lint/correctness/useExhaustiveDependencies: We want this to run once on mount
 	useEffect(() => {
-		const storedToggles = maybeLocalStorage?.getItem(LOCAL_STORAGE_KEY);
+		// Avoid hydration errors by only updating toggles when mounted
+		setToggleState({
+			toggles: new Set(getInitialToggles()),
+		});
+	}, [setToggleState]);
 
-		const parsedToggles = storedToggles ? (JSON.parse(storedToggles) as LocalStorageToggles) : DEFAULT_TOGGLES;
+	const isToggled = useCallback((id: ToggleId) => toggleState.toggles.has(id), [toggleState.toggles]);
 
-		for (const id of parsedToggles) {
-			enabledIds.add(id);
-		}
-	}, []);
+	const toggle = useCallback(
+		(id: ToggleId) => {
+			setToggleState((draft) => {
+				if (draft.toggles.has(id)) {
+					draft.toggles.delete(id);
+				} else {
+					draft.toggles.add(id);
+				}
 
-	function isToggled(id: ToggleId): boolean {
-		return enabledIds.has(id);
-	}
-
-	function toggle(id: ToggleId): void {
-		const newValue = !isToggled(id);
-
-		if (newValue) {
-			enabledIds.add(id);
-		} else {
-			enabledIds.delete(id);
-		}
-	}
-
-	// biome-ignore lint/correctness/useExhaustiveDependencies: We can't just check if the set object has changed, we need to serialize it
-	useEffect(() => {
-		maybeLocalStorage?.setItem(LOCAL_STORAGE_KEY, JSON.stringify([...enabledIds]));
-	}, [[...enabledIds].join(''), maybeLocalStorage]);
+				storeToggles([...draft.toggles]);
+			});
+		},
+		[setToggleState],
+	);
 
 	const context: Context = useMemo(() => ({ isToggled, toggle }), [isToggled, toggle]);
 
