@@ -1,6 +1,15 @@
-const { withPlausibleProxy } = require('next-plausible');
-const serwist = require('@serwist/next');
-const withSerwist = serwist.default({
+// const { withPlausibleProxy } = require('next-plausible');
+// const serwist = require('@serwist/next');
+// const withSerwist = serwist.default({
+// 	swSrc: 'src/sw.ts',
+// 	swDest: 'public/sw.js',
+// 	disable: process.env.NODE_ENV === 'development',
+// });
+
+import serwist from '@serwist/next';
+import { withPlausibleProxy } from 'next-plausible';
+
+const withSerwist = serwist({
 	swSrc: 'src/sw.ts',
 	swDest: 'public/sw.js',
 	disable: process.env.NODE_ENV === 'development',
@@ -29,4 +38,5 @@ const nextConfig = withSerwist(
 	}),
 );
 
-module.exports = nextConfig;
+// biome-ignore lint/style/noDefaultExport: This has to be a default export
+export default nextConfig;

@@ -1,6 +1,6 @@
-import { defaultCache } from '@serwist/next/browser';
+import { defaultCache } from '@serwist/next/worker';
 import type { PrecacheEntry } from '@serwist/precaching';
-import { installSerwist } from '@serwist/sw';
+import { Serwist } from 'serwist';
 
 declare const self: ServiceWorkerGlobalScope & {
 	// Change this attribute's name to your `injectionPoint`.
@@ -10,10 +10,13 @@ declare const self: ServiceWorkerGlobalScope & {
 	__SW_MANIFEST: (PrecacheEntry | string)[] | undefined;
 };
 
-installSerwist({
-	precacheEntries: self.__SW_MANIFEST,
+const serwist = new Serwist({
+	// Other options
+	runtimeCaching: defaultCache,
 	skipWaiting: true,
+	precacheEntries: self.__SW_MANIFEST,
 	clientsClaim: true,
 	navigationPreload: true,
-	runtimeCaching: defaultCache,
 });
+
+serwist.addEventListeners();
