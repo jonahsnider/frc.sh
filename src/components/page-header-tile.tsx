@@ -1,4 +1,4 @@
-import { Card, Code, Heading, Link, Text } from '@radix-ui/themes';
+import { Badge, Card, Code, Heading, Link, Text } from '@radix-ui/themes';
 import { Toggles } from './toggles';
 
 export function PageHeaderTile() {
@@ -33,6 +33,13 @@ export function PageHeaderTile() {
 				<Heading as='h2' size='3'>
 					Other projects:
 				</Heading>
+
+				<Link href='https://interval.so/?utm_source=frc.sh' size='3'>
+					Interval{' '}
+					<Badge className='uppercase' size='2'>
+						New
+					</Badge>
+				</Link>
 
 				<Link href='https://scores.frc.sh/?utm_source=frc.sh' size='3'>
 					scores.frc.sh
