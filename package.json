@@ -23,7 +23,7 @@
 		"autoprefixer": "10.4.20",
 		"clsx": "2.1.1",
 		"mutative": "1.0.8",
-		"next": "14.2.5",
+		"next": "14.2.6",
 		"next-plausible": "3.12.2",
 		"next-themes": "0.3.0",
 		"postcss": "8.4.41",
