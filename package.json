@@ -36,7 +36,7 @@
 		"use-mutative": "1.1.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.0"
+		"@biomejs/biome": "1.9.1"
 	},
 	"packageManager": "bun@1.1.9"
 }
