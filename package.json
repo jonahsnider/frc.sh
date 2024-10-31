@@ -15,7 +15,7 @@
 		"@serwist/next": "9.0.9",
 		"@serwist/precaching": "9.0.9",
 		"@serwist/sw": "9.0.9",
-		"@types/node": "22.8.4",
+		"@types/node": "22.8.6",
 		"@types/react": "18.3.12",
 		"@types/react-dom": "18.3.1",
 		"@vercel/analytics": "1.3.2",
