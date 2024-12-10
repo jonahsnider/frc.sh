@@ -17,7 +17,6 @@ const LOCAL_STORAGE_KEY = 'toggles';
 
 export const TogglesContext = createContext<Context>({
 	isToggled: () => false,
-	// biome-ignore lint/suspicious/noEmptyBlockStatements: This is a noop
 	toggle: () => {},
 });
 
