@@ -134,7 +134,7 @@ export default function Home() {
 					<TileGroup
 						category={CategoryId.Choreo}
 						title='Choreo'
-						tiles={[{ name: 'Docs', url: 'https://sleipnirgroup.github.io/Choreo/' }]}
+						tiles={[{ name: 'Docs', url: 'https://choreo.autos' }]}
 					/>
 
 					<TileGroup

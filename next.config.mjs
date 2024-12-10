@@ -24,7 +24,7 @@ const nextConfig = withSerwist(
 			{ permanent: false, source: '/phoenix', destination: 'https://api.ctr-electronics.com/phoenix6/release/java/' },
 			{ permanent: false, source: '/rev', destination: 'https://docs.revrobotics.com/brushless' },
 			{ permanent: false, source: '/pathplanner', destination: 'https://pathplanner.dev/home.html' },
-			{ permanent: false, source: '/choreo', destination: 'https://sleipnirgroup.github.io/Choreo/' },
+			{ permanent: false, source: '/choreo', destination: 'https://choreo.autos' },
 			{ permanent: false, source: '/limelight', destination: 'https://docs.limelightvision.io/' },
 			{ permanent: false, source: '/photonvision', destination: 'https://docs.photonvision.org/en/latest/' },
 			{ permanent: false, source: '/wpilib', destination: 'https://docs.wpilib.org/en/stable/' },
