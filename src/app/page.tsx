@@ -54,7 +54,7 @@ export default function Home() {
 						title='REV'
 						tiles={[
 							{ name: 'Docs', url: 'https://docs.revrobotics.com/brushless' },
-							{ name: 'Examples', url: 'https://github.com/REVrobotics/SPARK-MAX-Examples/tree/master' },
+							{ name: 'Examples', url: 'https://github.com/REVrobotics/REVLib-Examples' },
 							{
 								name: 'REVLib Javadoc',
 								url: 'https://codedocs.revrobotics.com/java/com/revrobotics/package-summary.html',
@@ -72,7 +72,7 @@ export default function Home() {
 							},
 							{
 								name: 'SPARK MAX LEDs',
-								url: 'https://docs.revrobotics.com/sparkmax/status-led',
+								url: 'https://docs.revrobotics.com/brushless/spark-max/status-led',
 							},
 						]}
 					/>
@@ -160,7 +160,7 @@ export default function Home() {
 						tiles={[
 							{
 								name: 'Docs',
-								url: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme',
+								url: 'https://docs.advantagekit.org/',
 								toggle: ToggleId.Java,
 							},
 						]}

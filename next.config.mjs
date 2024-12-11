@@ -32,7 +32,7 @@ const nextConfig = withSerwist(
 			{
 				permanent: false,
 				source: '/advantagekit',
-				destination: 'https://github.com/Mechanical-Advantage/AdvantageKit#readme',
+				destination: 'https://docs.advantagekit.org/',
 			},
 		],
 	}),
