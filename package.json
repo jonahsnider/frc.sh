@@ -16,7 +16,7 @@
 		"@serwist/precaching": "9.0.11",
 		"@serwist/sw": "9.0.11",
 		"@types/node": "22.10.2",
-		"@types/react": "18.3.16",
+		"@types/react": "18.3.17",
 		"@types/react-dom": "18.3.5",
 		"@vercel/analytics": "1.4.1",
 		"@vite-pwa/assets-generator": "0.2.6",
