@@ -18,7 +18,7 @@
 		"@types/node": "22.13.1",
 		"@types/react": "18.3.18",
 		"@types/react-dom": "18.3.5",
-		"@vercel/analytics": "1.4.1",
+		"@vercel/analytics": "1.5.0",
 		"@vite-pwa/assets-generator": "0.2.6",
 		"autoprefixer": "10.4.20",
 		"clsx": "2.1.1",
