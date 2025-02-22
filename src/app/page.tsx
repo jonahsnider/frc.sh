@@ -1,4 +1,4 @@
-import { CategoryId } from '@/content';
+import { CategoryId, FIELD_LAYOUT_URL, GAME_MANUAL_URL } from '@/content';
 import { ToggleId } from '@/contexts/toggles';
 import { metadataBase } from '@/metadata';
 import type { Metadata } from 'next';
@@ -172,11 +172,11 @@ export default function Home() {
 						tiles={[
 							{
 								name: 'Game manual PDF',
-								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/Manual/${new Date().getFullYear()}GameManual.pdf`,
+								url: GAME_MANUAL_URL,
 							},
 							{
 								name: 'Field layout and marking PDF',
-								url: `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`,
+								url: FIELD_LAYOUT_URL,
 							},
 						]}
 					/>
