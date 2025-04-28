@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"build": "NODE_ENV=production next build",
-		"dev": "next dev",
+		"dev": "next dev --turbopack",
 		"generate-icons": "pwa-assets-generator",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write --unsafe",
@@ -16,21 +16,21 @@
 		"@serwist/precaching": "9.0.11",
 		"@serwist/sw": "9.0.11",
 		"@types/node": "22.13.5",
-		"@types/react": "18.3.18",
-		"@types/react-dom": "18.3.5",
+		"@types/react": "19.1.2",
+		"@types/react-dom": "19.1.2",
 		"@vercel/analytics": "1.5.0",
 		"@vite-pwa/assets-generator": "0.2.6",
 		"autoprefixer": "10.4.20",
 		"clsx": "2.1.1",
 		"mutative": "1.1.0",
-		"next": "14.2.24",
+		"next": "15.3.1",
 		"next-plausible": "3.12.4",
 		"next-themes": "0.4.4",
 		"postcss": "8.5.3",
 		"postcss-import": "16.1.0",
 		"radix-themes-tw": "0.2.3",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
 		"tailwindcss": "3.4.17",
 		"typescript": "5.7.3",
 		"use-mutative": "1.2.1"
@@ -38,5 +38,5 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4"
 	},
-	"packageManager": "bun@1.1.9"
+	"packageManager": "bun@1.2.10"
 }
