@@ -1,5 +1,25 @@
-@import "tailwindcss/base";
-@import "@radix-ui/themes/styles.css";
+@import "radix-themes-tw";
+@import "@radix-ui/themes/styles.css" layer(base);
 
-@tailwind components;
-@tailwind utilities;
+@theme {
+	--color-ctre: #95ca3e;
+	--color-rev: #f05a28;
+	--color-doglog: #591616;
+	--color-advantagekit: #fec20a;
+	--color-pathplanner: #3f55ce;
+	--color-choreo: #803cff;
+	--color-wpilib: #013974;
+	--color-limelight: #65bf0f;
+	--color-photonvision: #016392;
+
+	--color-first-red: #ed1c24;
+	--color-first-blue: #0066b3;
+	--color-first-white: #fff;
+	--color-first-sky-blue: #009cd7;
+
+	--color-java: #b07219;
+	--color-cpp: #f34b7d;
+	--color-python: #3572a5;
+
+	--font-mono: var(--font-fira-mono);
+}

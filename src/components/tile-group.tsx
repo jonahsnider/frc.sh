@@ -61,21 +61,18 @@ export function TileGroup({ category, tiles, title }: Props) {
 	return (
 		<Theme accentColor={getAccentColor(category)} asChild={true}>
 			<Card
-				className={clsx(
-					'col-span-1 xs:col-span-2 grid grid-cols-subgrid gap-rx-4 bg-opacity-40 pt-rx-4 sm:col-span-1 dark:bg-opacity-10',
-					{
-						'bg-ctre': category === CategoryId.Ctre,
-						'bg-doglog': category === CategoryId.Doglog,
-						'bg-advantagekit': category === CategoryId.Advantagekit,
-						'bg-pathplanner': category === CategoryId.Pathplanner,
-						'bg-choreo': category === CategoryId.Choreo,
-						'bg-wpilib': category === CategoryId.Wpilib,
-						'bg-rev': category === CategoryId.Rev,
-						'bg-limelight': category === CategoryId.Limelight,
-						'bg-photonvision': category === CategoryId.Photonvision,
-						'bg-first-sky-blue': category === CategoryId.First,
-					},
-				)}
+				className={clsx('col-span-1 xs:col-span-2 grid grid-cols-subgrid gap-rx-4 pt-rx-4 sm:col-span-1', {
+					'bg-ctre/40 dark:bg-ctre/10': category === CategoryId.Ctre,
+					'bg-doglog/40 dark:bg-doglog/10': category === CategoryId.Doglog,
+					'bg-advantagekit/40 dark:bg-advantagekit/10': category === CategoryId.Advantagekit,
+					'bg-pathplanner/40 dark:bg-pathplanner/10': category === CategoryId.Pathplanner,
+					'bg-choreo/40 dark:bg-choreo/10': category === CategoryId.Choreo,
+					'bg-wpilib/40 dark:bg-wpilib/10': category === CategoryId.Wpilib,
+					'bg-rev/40 dark:bg-rev/10': category === CategoryId.Rev,
+					'bg-limelight/40 dark:bg-limelight/10': category === CategoryId.Limelight,
+					'bg-photonvision/40 dark:bg-photonvision/10': category === CategoryId.Photonvision,
+					'bg-first-sky-blue/40 dark:bg-first-sky-blue/10': category === CategoryId.First,
+				})}
 				style={{
 					gridRow: `span ${childTilesCount} / span ${childTilesCount}`,
 				}}
