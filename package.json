@@ -20,7 +20,7 @@
 		"@types/react": "19.1.2",
 		"@types/react-dom": "19.1.2",
 		"@vercel/analytics": "1.5.0",
-		"@vite-pwa/assets-generator": "0.2.6",
+		"@vite-pwa/assets-generator": "1.0.0",
 		"clsx": "2.1.1",
 		"mutative": "1.1.0",
 		"next": "15.3.1",
