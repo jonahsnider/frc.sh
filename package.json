@@ -16,7 +16,7 @@
 		"@serwist/precaching": "9.0.14",
 		"@serwist/sw": "9.0.14",
 		"@tailwindcss/postcss": "^4.1.4",
-		"@types/node": "22.15.28",
+		"@types/node": "22.15.29",
 		"@types/react": "19.1.6",
 		"@types/react-dom": "19.1.5",
 		"@vercel/analytics": "1.5.0",
