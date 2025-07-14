@@ -1,10 +1,10 @@
 'use client';
 
-import { CategoryId } from '@/content';
-import type { ToggleId } from '@/contexts/toggles';
 import { Card, Heading, Theme, type ThemeProps } from '@radix-ui/themes';
 import clsx from 'clsx';
 import { useContext } from 'react';
+import { CategoryId } from '@/content';
+import type { ToggleId } from '@/contexts/toggles';
 import { TogglesContext } from '../contexts/toggles-context';
 import { Tile } from './tile';
 

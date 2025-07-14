@@ -1,10 +1,10 @@
 'use client';
 
-import { CategoryId } from '@/content';
-import { usePlausible } from '@/hooks/plausible';
 import { Card, Text } from '@radix-ui/themes';
 import { track } from '@vercel/analytics';
 import clsx from 'clsx';
+import { CategoryId } from '@/content';
+import { usePlausible } from '@/hooks/plausible';
 
 type Props = {
 	category: CategoryId;

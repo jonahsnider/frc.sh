@@ -17,5 +17,5 @@ export function WebmanifestMetaTag() {
 		}
 	}, [theme, tag]);
 
-	return <></>;
+	return undefined;
 }

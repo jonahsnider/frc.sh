@@ -1,8 +1,8 @@
 'use client';
 
-import { TOGGLES, type ToggleId } from '@/contexts/toggles';
 import { Switch } from '@radix-ui/themes';
 import { useContext } from 'react';
+import { TOGGLES, type ToggleId } from '@/contexts/toggles';
 import { TogglesContext } from '../contexts/toggles-context';
 
 export function Toggles() {

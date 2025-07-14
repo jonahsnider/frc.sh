@@ -1,6 +1,5 @@
 import { defineConfig } from '@vite-pwa/assets-generator/config';
 
-// biome-ignore lint/style/noDefaultExport: This must be a default export
 export default defineConfig({
 	preset: {
 		transparent: {

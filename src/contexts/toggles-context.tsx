@@ -1,6 +1,6 @@
 'use client';
 
-import { type PropsWithChildren, createContext, useCallback, useEffect, useMemo } from 'react';
+import { createContext, type PropsWithChildren, useCallback, useEffect, useMemo } from 'react';
 import { useMutative } from 'use-mutative';
 import { ToggleId } from './toggles';
 

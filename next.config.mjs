@@ -48,5 +48,4 @@ const nextConfig = withSerwist(
 	}),
 );
 
-// biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default nextConfig;
