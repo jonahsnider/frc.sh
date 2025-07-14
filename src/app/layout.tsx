@@ -1,11 +1,11 @@
-import { WebmanifestMetaTag } from '@/components/webmanifest-meta-tag';
 import { Container, Theme } from '@radix-ui/themes';
 import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata, Viewport } from 'next';
+import { Fira_Mono } from 'next/font/google';
 import PlausibleProvider from 'next-plausible';
 import { ThemeProvider } from 'next-themes';
-import { Fira_Mono } from 'next/font/google';
+import { WebmanifestMetaTag } from '@/components/webmanifest-meta-tag';
 import './globals.css';
 import { metadataBase } from '@/metadata';
 
@@ -39,7 +39,6 @@ export const viewport: Viewport = {
 	colorScheme: 'dark light',
 };
 
-// biome-ignore lint/style/noDefaultExport: This has to be a default export
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' suppressHydrationWarning={true}>

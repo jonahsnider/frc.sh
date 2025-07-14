@@ -6,7 +6,6 @@ declare const self: ServiceWorkerGlobalScope & {
 	// Change this attribute's name to your `injectionPoint`.
 	// `injectionPoint` is an InjectManifest option.
 	// See https://serwist.pages.dev/docs/build/inject-manifest/configuring
-	// biome-ignore lint/style/useNamingConvention: This can't be renamed
 	__SW_MANIFEST: (PrecacheEntry | string)[] | undefined;
 };
 
