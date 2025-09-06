@@ -5,9 +5,9 @@
       "name": "frc.sh",
       "dependencies": {
         "@radix-ui/themes": "3.2.1",
-        "@serwist/next": "9.2.0",
-        "@serwist/precaching": "9.2.0",
-        "@serwist/sw": "9.2.0",
+        "@serwist/next": "9.2.1",
+        "@serwist/precaching": "9.2.1",
+        "@serwist/sw": "9.2.1",
         "@tailwindcss/postcss": "^4.1.4",
         "@types/node": "24.3.1",
         "@types/react": "19.1.12",
@@ -254,17 +254,17 @@
 
     "@radix-ui/themes": ["@radix-ui/themes@3.2.1", "", { "dependencies": { "@radix-ui/colors": "^3.0.0", "classnames": "^2.3.2", "radix-ui": "^1.1.3", "react-remove-scroll-bar": "^2.3.8" }, "peerDependencies": { "@types/react": "*", "@types/react-dom": "*", "react": "16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc", "react-dom": "16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc" }, "optionalPeers": ["@types/react", "@types/react-dom"] }, "sha512-WJL2YKAGItkunwm3O4cLTFKCGJTfAfF6Hmq7f5bCo1ggqC9qJQ/wfg/25AAN72aoEM1yqXZQ+pslsw48AFR0Xg=="],
 
-    "@serwist/build": ["@serwist/build@9.2.0", "", { "dependencies": { "common-tags": "1.8.2", "glob": "10.4.5", "pretty-bytes": "6.1.1", "source-map": "0.8.0-beta.0", "zod": "4.0.5" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-pmRq0gtg2ZgAHEtyBSVDEibU23ZqrgjeMae+17Z8XS2winZ8rvHCjfvSKGOlqjDWJ7g9NbZRokGGK1T8CYUkBA=="],
+    "@serwist/build": ["@serwist/build@9.2.1", "", { "dependencies": { "common-tags": "1.8.2", "glob": "10.4.5", "pretty-bytes": "6.1.1", "source-map": "0.8.0-beta.0", "zod": "4.1.5" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-mMCBZi82jVCxIhOu/D3ifkfmiuhdFHuelWK1zRlASLbkogH7YsS6qvGTl37vWBTVAWNKcKfVWLR6tq9AUB7BSg=="],
 
-    "@serwist/next": ["@serwist/next@9.2.0", "", { "dependencies": { "@serwist/build": "9.2.0", "@serwist/webpack-plugin": "9.2.0", "@serwist/window": "9.2.0", "chalk": "5.4.1", "glob": "10.4.5", "serwist": "9.2.0", "zod": "4.0.5" }, "peerDependencies": { "next": ">=14.0.0", "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-BQiKhoyEqjZF0rxEWIIiDs46yrmddEbF8kbVsJ/sJMC/xo17gSLouY/hlQMUFOMJ1jQGuZ/L7ep4qhzefcsa1g=="],
+    "@serwist/next": ["@serwist/next@9.2.1", "", { "dependencies": { "@serwist/build": "9.2.1", "@serwist/webpack-plugin": "9.2.1", "@serwist/window": "9.2.1", "chalk": "5.6.0", "glob": "10.4.5", "serwist": "9.2.1", "zod": "4.1.5" }, "peerDependencies": { "next": ">=14.0.0", "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-CCTvZYSWK1hCmANViGLd7LvVc9r9wd4aaVX4Uk0F6fC0/Xn05GY52di7LGZ2NveGr1g+NjQvQSBhfxCQK95NIg=="],
 
-    "@serwist/precaching": ["@serwist/precaching@9.2.0", "", { "dependencies": { "serwist": "9.2.0" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-tEQ2lMwAG3POEk/WGiAYL9aWlaEgWIsfLONxhUzuJsHKKzo5toPiFzAP4+0117+gsHNU9yHDOB+olxaBO4mpSA=="],
+    "@serwist/precaching": ["@serwist/precaching@9.2.1", "", { "dependencies": { "serwist": "9.2.1" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-n3Atq6QcOvycj1CanC/kDvhRssb1Tx4IvXNbf3o3iQ6qGL2XYsxe8E6dKtr+XTf13mEvvmZLQJWAh+haNAJN9Q=="],
 
-    "@serwist/sw": ["@serwist/sw@9.2.0", "", { "dependencies": { "serwist": "9.2.0" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-+5e/6sQFg7HENgwx2Ym/w5SsffCPFaaiXGpYzRxijiSg/4ZyJr3bOARfjyq/qb0u9YPUuy5VI1MLu4iUeSP5wg=="],
+    "@serwist/sw": ["@serwist/sw@9.2.1", "", { "dependencies": { "serwist": "9.2.1" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-SQygNDTB4w4HRjKiGH+Ybme+dy2rynt6RPFHw27SANQRK1rEzqYUZ1S4SyKjiwJgIoy+mQOA7+T23OqAfW7Eqg=="],
 
-    "@serwist/webpack-plugin": ["@serwist/webpack-plugin@9.2.0", "", { "dependencies": { "@serwist/build": "9.2.0", "pretty-bytes": "6.1.1", "zod": "4.0.5" }, "peerDependencies": { "typescript": ">=5.0.0", "webpack": "4.4.0 || ^5.9.0" }, "optionalPeers": ["typescript", "webpack"] }, "sha512-J7Q7pPQxzVHgS4H+AlEUuo7CkuokoR01/ufxnCDBsk0OMn1ljjpP0kc8WpfzEtLd8d3WNvPBwBMN4Zi9703+mA=="],
+    "@serwist/webpack-plugin": ["@serwist/webpack-plugin@9.2.1", "", { "dependencies": { "@serwist/build": "9.2.1", "pretty-bytes": "6.1.1", "zod": "4.1.5" }, "peerDependencies": { "typescript": ">=5.0.0", "webpack": "4.4.0 || ^5.9.0" }, "optionalPeers": ["typescript", "webpack"] }, "sha512-tBVlKifGP96aV7A8HD0xXIJAu6/sTyfRc827LFuLajNaX2d/dpo/0sMxO45jEI+GS7vaUdTcSl5DqcaRkkQ9wQ=="],
 
-    "@serwist/window": ["@serwist/window@9.2.0", "", { "dependencies": { "@types/trusted-types": "2.0.7", "serwist": "9.2.0" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-fz96MqC1kZznuFCMCiG70+Z2IPLxByyq4lsDmiVlzX1nPpoCezJXRs0jKE4TV0d2Aipn/WemN26wdmOvuOJxPQ=="],
+    "@serwist/window": ["@serwist/window@9.2.1", "", { "dependencies": { "@types/trusted-types": "2.0.7", "serwist": "9.2.1" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-XkfV7+crhT4ArJCMcRle9AmzrxDjMRS6ExJwSPGmCqdb4JH/VyhcmJZljwoEpuZ1zh0cNvnWC8xEQ4p85jhxnQ=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.15", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g=="],
 
@@ -340,7 +340,7 @@
 
     "caniuse-lite": ["caniuse-lite@1.0.30001646", "", {}, "sha512-dRg00gudiBDDTmUhClSdv3hqRfpbOnU28IpI1T6PBTLWa+kOj0681C8uML3PifYfREuBrVjDGhL3adYpBT6spw=="],
 
-    "chalk": ["chalk@5.4.1", "", {}, "sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w=="],
+    "chalk": ["chalk@5.6.0", "", {}, "sha512-46QrSQFyVSEyYAgQ22hQ+zDa60YHA4fBstHmtSApj1Y5vKtG27fWowW03jCk5KcbXEWPZUIR894aARCA/G1kfQ=="],
 
     "chownr": ["chownr@1.1.4", "", {}, "sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg=="],
 
@@ -526,7 +526,7 @@
 
     "semver": ["semver@7.7.1", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA=="],
 
-    "serwist": ["serwist@9.2.0", "", { "dependencies": { "idb": "8.0.3" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-T5ZVNQeJ0ivVbDQtvlCm+KCy0JXFpmr+UCXdzg/Ep7bePWfQA405GfITZzbSZkwl2WpJSICGwGpggYJOBuud6A=="],
+    "serwist": ["serwist@9.2.1", "", { "dependencies": { "idb": "8.0.3" }, "peerDependencies": { "typescript": ">=5.0.0" }, "optionalPeers": ["typescript"] }, "sha512-icp1GQB3h9q1OqYeSw+iTTY0OZ3io+fzNG0Ot3p6Xe5DEZlSRn61FmGx9mq76q0CeMtZYBmmuw4tyIS1O76Lbw=="],
 
     "sharp": ["sharp@0.33.5", "", { "dependencies": { "color": "^4.2.3", "detect-libc": "^2.0.3", "semver": "^7.6.3" }, "optionalDependencies": { "@img/sharp-darwin-arm64": "0.33.5", "@img/sharp-darwin-x64": "0.33.5", "@img/sharp-libvips-darwin-arm64": "1.0.4", "@img/sharp-libvips-darwin-x64": "1.0.4", "@img/sharp-libvips-linux-arm": "1.0.5", "@img/sharp-libvips-linux-arm64": "1.0.4", "@img/sharp-libvips-linux-s390x": "1.0.4", "@img/sharp-libvips-linux-x64": "1.0.4", "@img/sharp-libvips-linuxmusl-arm64": "1.0.4", "@img/sharp-libvips-linuxmusl-x64": "1.0.4", "@img/sharp-linux-arm": "0.33.5", "@img/sharp-linux-arm64": "0.33.5", "@img/sharp-linux-s390x": "0.33.5", "@img/sharp-linux-x64": "0.33.5", "@img/sharp-linuxmusl-arm64": "0.33.5", "@img/sharp-linuxmusl-x64": "0.33.5", "@img/sharp-wasm32": "0.33.5", "@img/sharp-win32-ia32": "0.33.5", "@img/sharp-win32-x64": "0.33.5" } }, "sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw=="],
 
@@ -610,7 +610,7 @@
 
     "yallist": ["yallist@4.0.0", "", {}, "sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A=="],
 
-    "zod": ["zod@4.0.5", "", {}, "sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA=="],
+    "zod": ["zod@4.1.5", "", {}, "sha512-rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg=="],
 
     "@emnapi/runtime/tslib": ["tslib@2.8.1", "", {}, "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="],
 
