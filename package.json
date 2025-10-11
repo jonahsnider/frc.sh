@@ -16,7 +16,7 @@
 		"@serwist/precaching": "9.2.1",
 		"@serwist/sw": "9.2.1",
 		"@tailwindcss/postcss": "^4.1.4",
-		"@types/node": "24.7.1",
+		"@types/node": "24.7.2",
 		"@types/react": "19.2.2",
 		"@types/react-dom": "19.2.1",
 		"@vercel/analytics": "1.5.0",
