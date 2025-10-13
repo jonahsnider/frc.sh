@@ -18,7 +18,7 @@
 		"@tailwindcss/postcss": "^4.1.4",
 		"@types/node": "24.7.2",
 		"@types/react": "19.2.2",
-		"@types/react-dom": "19.2.1",
+		"@types/react-dom": "19.2.2",
 		"@vercel/analytics": "1.5.0",
 		"@vite-pwa/assets-generator": "1.0.1",
 		"clsx": "2.1.1",
