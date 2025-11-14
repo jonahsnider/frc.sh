@@ -250,3 +250,6 @@ service-account-key.json
 
 # Generated service worker
 public/sw.js
+
+# Next.js
+next-env.d.ts
