@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"build": "NODE_ENV=production next build",
+		"build": "NODE_ENV=production next build --webpack",
 		"dev": "next dev --turbopack",
 		"generate-icons": "pwa-assets-generator",
 		"lint": "biome check .",
