@@ -12,9 +12,9 @@
 	},
 	"dependencies": {
 		"@radix-ui/themes": "3.2.1",
-		"@serwist/next": "9.2.3",
-		"@serwist/precaching": "9.2.3",
-		"@serwist/sw": "9.2.3",
+		"@serwist/next": "9.3.0",
+		"@serwist/precaching": "9.3.0",
+		"@serwist/sw": "9.3.0",
 		"@tailwindcss/postcss": "^4.1.4",
 		"@types/node": "24.10.4",
 		"@types/react": "19.2.7",
