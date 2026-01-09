@@ -1,11 +1,3 @@
-// const { withPlausibleProxy } = require('next-plausible');
-// const serwist = require('@serwist/next');
-// const withSerwist = serwist.default({
-// 	swSrc: 'src/sw.ts',
-// 	swDest: 'public/sw.js',
-// 	disable: process.env.NODE_ENV === 'development',
-// });
-
 import serwist from '@serwist/next';
 import { withPlausibleProxy } from 'next-plausible';
 
