@@ -2,14 +2,14 @@
 	"assets": {
 		"directory": "./out",
 		"html_handling": "drop-trailing-slash",
-		"not_found_handling": "404-page",
+		"not_found_handling": "404-page"
 	},
 	"compatibility_date": "2026-01-10",
 	"name": "frc-sh",
 	"route": {
 		"custom_domain": true,
-		"pattern": "frc.sh",
+		"pattern": "frc.sh"
 	},
 	"workers_dev": false,
-	"$schema": "./node_modules/wrangler/config-schema.json",
+	"$schema": "./node_modules/wrangler/config-schema.json"
 }
