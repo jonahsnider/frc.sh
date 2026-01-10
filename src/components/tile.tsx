@@ -1,22 +1,15 @@
-'use client';
-
 import { Card, Text } from '@radix-ui/themes';
-import { track } from '@vercel/analytics';
 import clsx from 'clsx';
 import { CategoryId } from '@/content';
-import { usePlausible } from '@/hooks/plausible';
 
 type Props = {
 	category: CategoryId;
 	url: string;
 	name: string;
 	className?: string;
-	parentTitle: string;
 };
 
-export function Tile({ name, url, category, className, parentTitle }: Props) {
-	const plausible = usePlausible();
-
+export function Tile({ name, url, category, className }: Props) {
 	return (
 		<Card
 			asChild={true}
@@ -43,14 +36,7 @@ export function Tile({ name, url, category, className, parentTitle }: Props) {
 			)}
 		>
 			<Text asChild={true} size='6' align='center'>
-				<a
-					href={url}
-					onClick={() => {
-						plausible('Click tile', { props: { name: `${parentTitle} ${name}` } });
-						track('Click tile', { name: `${parentTitle} ${name}` });
-					}}
-					className='flex items-center justify-center py-rx-6'
-				>
+				<a href={url} className='flex items-center justify-center py-rx-6'>
 					{name}
 				</a>
 			</Text>

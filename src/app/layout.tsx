@@ -1,9 +1,7 @@
 import { Container, Theme } from '@radix-ui/themes';
-import { Analytics } from '@vercel/analytics/react';
 import clsx from 'clsx';
 import type { Metadata, Viewport } from 'next';
 import { Fira_Mono } from 'next/font/google';
-import PlausibleProvider from 'next-plausible';
 import { ThemeProvider } from 'next-themes';
 import { WebmanifestMetaTag } from '@/components/webmanifest-meta-tag';
 import './globals.css';
@@ -42,9 +40,6 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' suppressHydrationWarning={true}>
-			<head>
-				<PlausibleProvider domain='frc.sh' />
-			</head>
 			<body className={clsx(firaMono.variable)}>
 				<ThemeProvider attribute='class' enableSystem={true}>
 					<Theme accentColor='jade' grayColor='sage'>
@@ -53,8 +48,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 					<WebmanifestMetaTag />
 				</ThemeProvider>
-
-				<Analytics />
 			</body>
 		</html>
 	);

@@ -28,6 +28,9 @@ jobs:
       - name: Generate PWA icons
         run: bun run generate-icons
 
+      - name: Update year in content and redirects
+        run: bash scripts/update-year.sh
+
       - name: Run autofix.ci
         uses: autofix-ci/action@v1
         with:
