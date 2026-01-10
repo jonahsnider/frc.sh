@@ -82,7 +82,7 @@ export function TileGroup({ category, tiles, title }: Props) {
 				</Heading>
 
 				{filteredTiles.map(({ name, url }) => (
-					<Tile key={name} category={category} name={name} url={url} parentTitle={title} />
+					<Tile key={name} category={category} name={name} url={url} />
 				))}
 			</Card>
 		</Theme>
