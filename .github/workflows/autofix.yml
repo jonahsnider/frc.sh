@@ -29,7 +29,8 @@ jobs:
         run: bun run generate-icons
 
       - name: Update current year in _redirects
-        run: node scripts/update-year.mts
+        # TODO: Use Node once default Node version is v24
+        run: bun scripts/update-year.mts
 
       - name: Run autofix.ci
         uses: autofix-ci/action@v1
