@@ -24,26 +24,26 @@ export default function Home() {
 						category={CategoryId.Ctre}
 						title='CTR Electronics'
 						tiles={[
-							{ name: 'Docs', url: 'https://pro.docs.ctr-electronics.com/en/latest/' },
+							{ name: 'Docs', url: 'https://v6.docs.ctr-electronics.com/en/stable/' },
 							{ name: 'Examples', url: 'https://github.com/CrossTheRoadElec/Phoenix6-Examples' },
 							{
 								name: 'Phoenix Javadoc',
-								url: 'https://api.ctr-electronics.com/phoenix6/release/java/',
+								url: 'https://api.ctr-electronics.com/phoenix6/stable/java/',
 								toggle: ToggleId.Java,
 							},
 							{
 								name: 'Phoenix C++ reference',
-								url: 'https://api.ctr-electronics.com/phoenix6/release/cpp/',
+								url: 'https://api.ctr-electronics.com/phoenix6/stable/cpp/',
 								toggle: ToggleId.Cpp,
 							},
 							{
 								name: 'Phoenix Python reference',
-								url: 'https://api.ctr-electronics.com/phoenix6/release/python/',
+								url: 'https://api.ctr-electronics.com/phoenix6/stable/python/',
 								toggle: ToggleId.Python,
 							},
 							{
 								name: 'Kraken LEDs',
-								url: 'https://docs.wcproducts.com/kraken-x60/kraken-x60-+-talonfx/status-lights',
+								url: 'https://v6.docs.ctr-electronics.com/en/stable/docs/hardware-reference/talonfx/index.html#status-light-reference',
 							},
 						]}
 					/>
