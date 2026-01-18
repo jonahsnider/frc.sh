@@ -11,6 +11,8 @@ export enum CategoryId {
 	First = 'first',
 }
 
-export const GAME_MANUAL_URL = `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/Manual/${new Date().getFullYear()}GameManual.pdf`;
+const currentYear = new Date().getFullYear();
 
-export const FIELD_LAYOUT_URL = `https://firstfrc.blob.core.windows.net/frc${new Date().getFullYear()}/FieldAssets/${new Date().getFullYear()}FieldDrawings.pdf`;
+export const GAME_MANUAL_URL = `https://firstfrc.blob.core.windows.net/frc${currentYear}/Manual/${currentYear}GameManual.pdf`;
+
+export const FIELD_LAYOUT_URL = `https://firstfrc.blob.core.windows.net/frc${currentYear}/FieldAssets/${currentYear}-field-dimension-dwgs.pdf`;
