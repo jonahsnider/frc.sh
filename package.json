@@ -17,7 +17,7 @@
 		"@serwist/sw": "9.5.0",
 		"@tailwindcss/postcss": "^4.1.4",
 		"@types/node": "24.10.9",
-		"@types/react": "19.2.9",
+		"@types/react": "19.2.10",
 		"@types/react-dom": "19.2.3",
 		"@vite-pwa/assets-generator": "1.0.2",
 		"clsx": "2.1.1",
