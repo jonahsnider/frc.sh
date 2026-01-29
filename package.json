@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.11",
-		"wrangler": "4.61.0"
+		"wrangler": "4.61.1"
 	},
 	"packageManager": "bun@1.2.10"
 }
