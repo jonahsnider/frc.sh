@@ -11,7 +11,7 @@
 		"lint:fix": "biome check . --write --unsafe"
 	},
 	"dependencies": {
-		"@radix-ui/themes": "3.2.1",
+		"@radix-ui/themes": "3.3.0",
 		"@serwist/next": "9.5.3",
 		"@serwist/precaching": "9.5.3",
 		"@serwist/sw": "9.5.3",
