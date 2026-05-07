@@ -1,4 +1,4 @@
-import { Badge, Card, Code, Heading, Link, Text } from '@radix-ui/themes';
+import { Card, Code, Heading, Link, Text } from '@radix-ui/themes';
 import { Toggles } from './toggles';
 
 export function PageHeaderTile() {
