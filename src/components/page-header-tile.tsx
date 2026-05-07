@@ -35,10 +35,7 @@ export function PageHeaderTile() {
 				</Heading>
 
 				<Link href='https://interval.so/?utm_source=frc.sh' size='3'>
-					Interval{' '}
-					<Badge className='uppercase' size='2'>
-						New
-					</Badge>
+					Interval
 				</Link>
 
 				<Link href='https://scores.frc.sh/?utm_source=frc.sh' size='3'>
