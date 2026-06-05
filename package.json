@@ -16,7 +16,7 @@
 		"@serwist/precaching": "9.5.11",
 		"@serwist/sw": "9.5.11",
 		"@tailwindcss/postcss": "^4.1.4",
-		"@types/node": "24.12.4",
+		"@types/node": "24.13.0",
 		"@types/react": "19.2.16",
 		"@types/react-dom": "19.2.3",
 		"@vite-pwa/assets-generator": "1.0.2",
