@@ -13,9 +13,6 @@ export default defineConfig({
 				background: '#121212',
 			},
 		},
-		assetName(type, size) {
-			return `icons/${type}-${size.width}x${size.height}.png`;
-		},
 		apple: {
 			sizes: [],
 		},
