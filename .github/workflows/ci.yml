@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup aube
-        uses: endevco/aube-action@v1
+        uses: jdx/aube-action@v1
         with:
           node-version: auto
           run-install: true
@@ -29,7 +29,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup aube
-        uses: endevco/aube-action@v1
+        uses: jdx/aube-action@v1
         with:
           node-version: auto
           run-install: true
@@ -45,7 +45,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup aube
-        uses: endevco/aube-action@v1
+        uses: jdx/aube-action@v1
         with:
           node-version: auto
           run-install: true
