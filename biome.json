@@ -6,7 +6,7 @@
 		}
 	},
 	"files": {
-		"includes": ["**", "!**/.next", "!**/node_modules", "!**/.vercel", "!**/out", "!**/public/sw.js"]
+		"includes": ["**", "!**/*.astro", "!**/.astro", "!**/dist", "!**/node_modules", "!**/.vercel", "!**/public/sw.js"]
 	},
 	"formatter": {
 		"formatWithErrors": true,
