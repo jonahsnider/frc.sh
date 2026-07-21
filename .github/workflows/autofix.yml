@@ -25,9 +25,6 @@ jobs:
       - name: Apply Biome fixes
         run: aubr lint:fix
 
-      - name: Generate PWA icons
-        run: aubr generate-icons
-
       - name: Update current year in _redirects
         run: node scripts/update-year.mts
 

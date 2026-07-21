@@ -7,7 +7,6 @@
 		"check": "astro check",
 		"deploy": "wrangler deploy",
 		"dev": "astro dev",
-		"generate-icons": "pwa-assets-generator",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write --unsafe",
 		"preview": "astro preview"

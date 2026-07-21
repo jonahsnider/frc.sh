@@ -14,6 +14,9 @@ export default defineConfig({
 				injectionPoint: 'self.__SW_MANIFEST',
 			},
 			manifest: false,
+			pwaAssets: {
+				config: true,
+			},
 			registerType: 'autoUpdate',
 			srcDir: 'src',
 			strategies: 'injectManifest',
