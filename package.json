@@ -40,5 +40,5 @@
 		"@biomejs/biome": "2.5.4",
 		"wrangler": "4.112.0"
 	},
-	"packageManager": "bun@1.2.10"
+	"packageManager": "aube"
 }

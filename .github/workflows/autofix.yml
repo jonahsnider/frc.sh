@@ -13,24 +13,23 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
+      - name: Setup aube
+        uses: endevco/aube-action@v1
+        with:
+          node-version: auto
+          run-install: true
 
       - name: Migrate Biome schema
-        run: bun biome migrate --write
+        run: aubx biome migrate --write
 
       - name: Apply Biome fixes
-        run: bun run lint:fix
+        run: aubr lint:fix
 
       - name: Generate PWA icons
-        run: bun run generate-icons
+        run: aubr generate-icons
 
       - name: Update current year in _redirects
-        # TODO: Use Node once default Node version is v24
-        run: bun scripts/update-year.mts
+        run: node scripts/update-year.mts
 
       - name: Run autofix.ci
         uses: autofix-ci/action@v1

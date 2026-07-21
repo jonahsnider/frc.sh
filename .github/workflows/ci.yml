@@ -12,12 +12,13 @@ jobs:
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v7
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-      - name: Install dependencies with Bun
-        run: bun install --frozen-lockfile
+      - name: Setup aube
+        uses: endevco/aube-action@v1
+        with:
+          node-version: auto
+          run-install: true
       - name: Build
-        run: bun run build
+        run: aubr build
   type-check:
     name: Type check
 
@@ -27,12 +28,13 @@ jobs:
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v7
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-      - name: Install dependencies with Bun
-        run: bun install --frozen-lockfile
+      - name: Setup aube
+        uses: endevco/aube-action@v1
+        with:
+          node-version: auto
+          run-install: true
       - name: Run Astro check
-        run: bun run check
+        run: aubr check
   lint:
     name: Lint
 
@@ -42,9 +44,10 @@ jobs:
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v7
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-      - name: Install dependencies with Bun
-        run: bun install --frozen-lockfile
+      - name: Setup aube
+        uses: endevco/aube-action@v1
+        with:
+          node-version: auto
+          run-install: true
       - name: Lint
-        run: bun run lint
+        run: aubr lint
