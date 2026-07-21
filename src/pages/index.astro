@@ -1,0 +1,52 @@
+---
+import Home from '@/components/home';
+import '@/styles/global.css';
+
+const description = 'Quick links for FRC programming & software resources.';
+const canonicalUrl = new URL('/', Astro.site);
+const openGraphImageUrl = new URL('/opengraph-image.png', Astro.site);
+const twitterImageUrl = new URL('/twitter-image.png', Astro.site);
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='description' content={description} />
+		<meta name='color-scheme' content='dark light' />
+		<meta name='theme-color' content='#101211' media='(prefers-color-scheme: dark)' />
+		<meta name='theme-color' content='#ffffff' media='(prefers-color-scheme: light)' />
+
+		<title>frc.sh</title>
+		<link rel='canonical' href={canonicalUrl} />
+		<link rel='manifest' href='/light.webmanifest' />
+		<link rel='icon' href='/favicon.ico' sizes='32x32' />
+		<link rel='icon' href='/logo.svg' type='image/svg+xml' />
+		<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+
+		<meta property='og:type' content='website' />
+		<meta property='og:title' content='frc.sh' />
+		<meta property='og:site_name' content='frc.sh' />
+		<meta property='og:description' content={description} />
+		<meta property='og:url' content={canonicalUrl} />
+		<meta property='og:image' content={openGraphImageUrl} />
+		<meta property='og:image:alt' content='.sh' />
+
+		<meta name='twitter:card' content='summary' />
+		<meta name='twitter:title' content='frc.sh' />
+		<meta name='twitter:description' content={description} />
+		<meta name='twitter:image' content={twitterImageUrl} />
+		<meta name='twitter:image:alt' content='.sh' />
+	</head>
+	<body>
+		<Home client:load />
+		<script>
+			import { registerSW } from 'virtual:pwa-register';
+
+			if ('serviceWorker' in navigator) {
+				registerSW({ immediate: true });
+			}
+		</script>
+	</body>
+</html>
