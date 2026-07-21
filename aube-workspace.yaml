@@ -1,0 +1,9 @@
+allowBuilds:
+  "esbuild@0.28.1": true
+  "sharp@0.32.6 || 0.33.5 || 0.34.5": true
+  "workerd@1.20260714.1": true
+publicHoistPattern:
+  - "vite-plugin-pwa"
+  - "workbox-window"
+trustPolicyExclude:
+  - "@trickfilm400/rollup-plugin-off-main-thread@3.0.0-pre1"
