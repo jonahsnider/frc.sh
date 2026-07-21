@@ -1,6 +1,5 @@
 @import "@fontsource/fira-mono/latin-700.css";
 @import "radix-themes-tw";
-@import "@radix-ui/themes/styles.css" layer(base);
 
 @theme {
 	--color-ctre: #95ca3e;
