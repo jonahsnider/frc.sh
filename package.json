@@ -36,7 +36,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/check": "^0.9.9",
-		"@biomejs/biome": "2.5.4",
+		"@biomejs/biome": "2.5.5",
 		"wrangler": "4.112.0"
 	}
 }
