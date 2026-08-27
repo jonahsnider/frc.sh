@@ -13,17 +13,16 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
 
-      - name: Setup aube
-        uses: jdx/aube-action@v1
+      - name: Setup pnpm
+        uses: pnpm/setup@v2
         with:
-          node-version: auto
-          run-install: true
+          cache: true
 
       - name: Migrate Biome schema
-        run: aubx biome migrate --write
+        run: pnpm exec biome migrate --write
 
       - name: Apply Biome fixes
-        run: aubr lint:fix
+        run: pnpm lint:fix
 
       - name: Update current year in _redirects
         run: node scripts/update-year.mts
