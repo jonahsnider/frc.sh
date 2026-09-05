@@ -41,7 +41,7 @@
 		"vite-plugin-pwa": "1.3.0",
 		"wrangler": "4.129.0"
 	},
-	"packageManager": "pnpm@12.3.2",
+	"packageManager": "pnpm@12.3.3",
 	"devEngines": {
 		"runtime": {
 			"name": "node",
