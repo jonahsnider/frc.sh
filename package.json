@@ -17,7 +17,7 @@
 		"@radix-ui/themes": "3.3.0",
 		"@serwist/vite": "^9.5.11",
 		"@tailwindcss/vite": "^4.3.3",
-		"@types/node": "26.6.0",
+		"@types/node": "26.6.1",
 		"@types/react": "19.3.0",
 		"@types/react-dom": "19.3.0",
 		"@vite-pwa/assets-generator": "2.0.0",
