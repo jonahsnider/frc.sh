@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup pnpm
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v3
         with:
           cache: true
       - name: Build
@@ -28,7 +28,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup pnpm
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v3
         with:
           cache: true
       - name: Run Astro check
@@ -43,7 +43,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v7
       - name: Setup pnpm
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v3
         with:
           cache: true
       - name: Lint
