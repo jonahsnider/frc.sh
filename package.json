@@ -39,7 +39,7 @@
 		"@astrojs/check": "^0.9.9",
 		"@biomejs/biome": "2.5.15",
 		"vite-plugin-pwa": "2.0.0",
-		"wrangler": "4.147.0"
+		"wrangler": "4.148.0"
 	},
 	"packageManager": "pnpm@12.10.1",
 	"devEngines": {
