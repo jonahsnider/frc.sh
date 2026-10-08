@@ -42,7 +42,7 @@
 		"@astrojs/check": "0.9.10",
 		"knip": "6.40.0",
 		"oxfmt": "0.72.0",
-		"oxlint": "1.85.0",
+		"oxlint": "1.87.0",
 		"oxlint-tsgolint": "7.0.2003",
 		"vite-plugin-pwa": "2.0.0",
 		"wrangler": "4.148.0"
