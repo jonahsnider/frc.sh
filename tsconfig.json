@@ -1,13 +1,12 @@
 {
 	"extends": "astro/tsconfigs/strict",
-	"include": [".astro/types.d.ts", "**/*"],
+	"include": [".astro/types.d.ts", "src/**/*", "scripts/**/*", "*.config.ts", "*.config.mjs"],
 	"exclude": ["dist"],
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
 		"types": ["vite-plugin-pwa/client"],
-		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./src/*"]
 		}

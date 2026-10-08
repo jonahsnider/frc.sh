@@ -1,5 +1,5 @@
-@import "@fontsource/fira-mono/latin-700.css";
-@import "radix-themes-tw";
+@import '@fontsource/fira-mono/latin-700.css';
+@import 'radix-themes-tw';
 
 @theme {
 	--color-ctre: #95ca3e;
@@ -21,6 +21,6 @@
 	--color-cpp: #f34b7d;
 	--color-python: #3572a5;
 
-	--font-fira-mono: "Fira Mono", monospace;
+	--font-fira-mono: 'Fira Mono', monospace;
 	--font-mono: var(--font-fira-mono);
 }

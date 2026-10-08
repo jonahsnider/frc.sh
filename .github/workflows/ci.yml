@@ -2,6 +2,9 @@ name: CI
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build
@@ -48,3 +51,7 @@ jobs:
           cache: true
       - name: Lint
         run: pnpm lint
+      - name: Check formatting
+        run: pnpm format
+      - name: Check unused code and dependencies
+        run: pnpm knip

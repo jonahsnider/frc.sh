@@ -7,46 +7,52 @@
 		"check": "astro check",
 		"deploy": "wrangler deploy",
 		"dev": "astro dev",
-		"lint": "biome check .",
-		"lint:fix": "biome check . --write --unsafe",
-		"preview": "astro preview"
+		"lint": "oxlint",
+		"lint:fix": "oxlint --fix",
+		"preview": "astro preview",
+		"format": "oxfmt --check",
+		"format:fix": "oxfmt",
+		"knip": "knip"
 	},
 	"dependencies": {
-		"@astrojs/react": "^7.0.0",
-		"@fontsource/fira-mono": "^5.3.0",
+		"@astrojs/react": "7.0.0",
+		"@fontsource/fira-mono": "5.3.0",
 		"@radix-ui/themes": "3.3.0",
-		"@serwist/vite": "^9.5.11",
-		"@tailwindcss/vite": "^4.3.3",
+		"@serwist/vite": "9.5.13",
+		"@tailwindcss/vite": "4.3.3",
 		"@types/node": "26.6.4",
 		"@types/react": "19.3.0",
 		"@types/react-dom": "19.3.0",
 		"@vite-pwa/assets-generator": "2.0.0",
-		"@vite-pwa/astro": "^1.2.0",
-		"astro": "^7.1.3",
+		"@vite-pwa/astro": "1.2.0",
+		"astro": "7.3.5",
 		"clsx": "2.1.1",
 		"mutative": "1.3.0",
 		"next-themes": "0.4.6",
 		"radix-themes-tw": "1.1.0",
 		"react": "19.3.0",
 		"react-dom": "19.3.0",
-		"serwist": "^9.5.11",
-		"tailwindcss": "^4.1.4",
+		"serwist": "9.5.13",
+		"tailwindcss": "4.3.3",
 		"typescript": "6.0.3",
 		"use-mutative": "1.3.1",
 		"workbox-window": "7.4.1"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.9",
-		"@biomejs/biome": "2.5.15",
+		"@astrojs/check": "0.9.10",
+		"knip": "6.39.0",
+		"oxfmt": "0.71.0",
+		"oxlint": "1.85.0",
+		"oxlint-tsgolint": "7.0.2003",
 		"vite-plugin-pwa": "2.0.0",
 		"wrangler": "4.148.0"
 	},
-	"packageManager": "pnpm@12.10.1",
 	"devEngines": {
 		"runtime": {
 			"name": "node",
 			"version": "24.x",
 			"onFail": "warn"
 		}
-	}
+	},
+	"packageManager": "pnpm@12.10.1"
 }

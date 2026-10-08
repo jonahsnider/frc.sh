@@ -2,3 +2,16 @@ allowBuilds:
   esbuild: true
   sharp: true
   workerd: true
+packageExtensions:
+  # radix-themes-tw's CSS imports packages listed only as dev dependencies.
+  radix-themes-tw@1.1.0:
+    peerDependencies:
+      '@radix-ui/themes': '^3'
+      tailwindcss: '^4'
+  # next-themes imports React types but does not declare them.
+  next-themes@0.4.6:
+    peerDependencies:
+      '@types/react': '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
