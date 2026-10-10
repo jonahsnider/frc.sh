@@ -40,7 +40,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/check": "0.9.10",
-		"knip": "6.40.0",
+		"knip": "6.41.0",
 		"oxfmt": "0.72.0",
 		"oxlint": "1.87.0",
 		"oxlint-tsgolint": "7.0.2003",
