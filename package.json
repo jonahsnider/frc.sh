@@ -43,7 +43,7 @@
 		"knip": "6.41.0",
 		"oxfmt": "0.72.0",
 		"oxlint": "1.87.0",
-		"oxlint-tsgolint": "7.0.2003",
+		"oxlint-tsgolint": "7.0.2004",
 		"vite-plugin-pwa": "2.0.0",
 		"wrangler": "4.149.0"
 	},
