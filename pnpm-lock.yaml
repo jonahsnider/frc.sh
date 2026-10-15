@@ -229,8 +229,8 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
       use-mutative:
-        specifier: 1.3.1
-        version: 1.3.1(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1)
+        specifier: 2.0.0
+        version: 2.0.0(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1)
       workbox-window:
         specifier: 7.4.1
         version: 7.4.1
@@ -5180,11 +5180,11 @@ packages:
       '@types/react':
         optional: true
 
-  use-mutative@1.3.1:
-    resolution: {integrity: sha512-5qTAr3sVVzLDU7H66oRYbSyIoWAmDT3NTr+WTJVvW+KT9Diqz31r/BLGqvVErv54TKl4wYoOOqF6qZLwGA34SA==}
+  use-mutative@2.0.0:
+    resolution: {integrity: sha512-/equpZojpFNzcfku7cLUAFpAAChxzr5zDdXAMVDDRD2FMAT2CL194FQTNnZ9t/MANksTtUjd3oEzaDvVSUZ31w==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0 || ^19.0
-      mutative: ^1.3.0
+      mutative: ^2.0.0
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0
 
   use-sidecar@1.1.3:
@@ -10453,7 +10453,7 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  use-mutative@1.3.1(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1):
+  use-mutative@2.0.0(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1):
     dependencies:
       '@types/react': 19.3.0
       mutative: 2.0.0
