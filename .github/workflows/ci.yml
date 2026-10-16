@@ -6,8 +6,8 @@ permissions:
   contents: read
 
 jobs:
-  build:
-    name: Build
+  build-and-test:
+    name: Build and test
 
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -21,37 +21,12 @@ jobs:
           cache: true
       - name: Build
         run: pnpm build
-  type-check:
-    name: Type check
-
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout Git repository
-        uses: actions/checkout@v7
-      - name: Setup pnpm
-        uses: pnpm/setup@v3
-        with:
-          cache: true
-      - name: Run Astro check
-        run: pnpm check
-  lint:
-    name: Lint
-
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    steps:
-      - name: Checkout Git repository
-        uses: actions/checkout@v7
-      - name: Setup pnpm
-        uses: pnpm/setup@v3
-        with:
-          cache: true
-      - name: Lint
-        run: pnpm lint
-      - name: Check formatting
-        run: pnpm format
-      - name: Check unused code and dependencies
-        run: pnpm knip
+      - parallel:
+          - name: Run Astro check
+            run: pnpm check
+          - name: Lint
+            run: pnpm lint
+          - name: Check formatting
+            run: pnpm format
+          - name: Check unused code and dependencies
+            run: pnpm knip
