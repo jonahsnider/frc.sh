@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, type PropsWithChildren, useCallback, useEffect, useMemo } from 'react';
+import { createContext, type PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { useMutative } from 'use-mutative';
 import { ToggleId } from './toggles';
 
@@ -48,32 +48,34 @@ function storeToggles(toggles: LocalStorageToggles): void {
 }
 
 export function TogglesProvider({ children }: PropsWithChildren) {
-	const [toggleState, setToggleState] = useMutative({
-		toggles: new Set<ToggleId>(DEFAULT_TOGGLES),
-	});
+	const [toggles, setToggles] = useMutative(() => new Set<ToggleId>(DEFAULT_TOGGLES));
+	const [hasLoadedToggles, setHasLoadedToggles] = useState(false);
 
 	useEffect(() => {
 		// Avoid hydration errors by only updating toggles when mounted
-		setToggleState({
-			toggles: new Set(getInitialToggles()),
-		});
-	}, [setToggleState]);
+		setToggles(new Set(getInitialToggles()));
+		setHasLoadedToggles(true);
+	}, [setToggles]);
 
-	const isToggled = useCallback((id: ToggleId) => toggleState.toggles.has(id), [toggleState.toggles]);
+	useEffect(() => {
+		if (hasLoadedToggles) {
+			storeToggles([...toggles]);
+		}
+	}, [hasLoadedToggles, toggles]);
+
+	const isToggled = useCallback((id: ToggleId) => toggles.has(id), [toggles]);
 
 	const toggle = useCallback(
 		(id: ToggleId) => {
-			setToggleState((draft) => {
-				if (draft.toggles.has(id)) {
-					draft.toggles.delete(id);
+			setToggles((draft) => {
+				if (draft.has(id)) {
+					draft.delete(id);
 				} else {
-					draft.toggles.add(id);
+					draft.add(id);
 				}
-
-				storeToggles([...draft.toggles]);
 			});
 		},
-		[setToggleState],
+		[setToggles],
 	);
 
 	const context: Context = useMemo(() => ({ isToggled, toggle }), [isToggled, toggle]);
