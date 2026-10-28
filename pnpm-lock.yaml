@@ -205,8 +205,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1
       mutative:
-        specifier: 2.0.0
-        version: 2.0.0
+        specifier: 2.0.1
+        version: 2.0.1
       next-themes:
         specifier: 0.4.6
         version: 0.4.6(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -230,7 +230,7 @@ importers:
         version: 6.0.3
       use-mutative:
         specifier: 2.0.0
-        version: 2.0.0(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1)
+        version: 2.0.0(@types/react@19.3.0)(mutative@2.0.1)(react@19.3.1)
       workbox-window:
         specifier: 7.4.1
         version: 7.4.1
@@ -4389,8 +4389,8 @@ packages:
   muggle-string@0.4.1:
     resolution: {integrity: sha512-VNTrAak/KhO2i8dqqnqnAHOa3cYBwXEZe9h+D5h/1ZqFSTEFHdM65lR7RoIqq3tBBYavsOXV84NoHXZ0AkPyqQ==}
 
-  mutative@2.0.0:
-    resolution: {integrity: sha512-HCb6TyEvwUChR3K+sssLk2LqEAOobSlu1ZATUvoa7Kh952kzhyX+huPddmIFc0LYEctFRJb0+ioQybKMkFLO6A==}
+  mutative@2.0.1:
+    resolution: {integrity: sha512-GubGN7GnF7FH6+YEmpXwYTSJtHywh/oVa/J1pGVnffo/xea/DxejBxCR699FlCgLVt1l+uz5Jtd0SRfnvhQyAg==}
     engines: {node: '>=14.0'}
 
   nanoid@3.3.20:
@@ -9477,7 +9477,7 @@ snapshots:
 
   muggle-string@0.4.1: {}
 
-  mutative@2.0.0: {}
+  mutative@2.0.1: {}
 
   nanoid@3.3.20: {}
 
@@ -10456,10 +10456,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.3.0
 
-  use-mutative@2.0.0(@types/react@19.3.0)(mutative@2.0.0)(react@19.3.1):
+  use-mutative@2.0.0(@types/react@19.3.0)(mutative@2.0.1)(react@19.3.1):
     dependencies:
       '@types/react': 19.3.0
-      mutative: 2.0.0
+      mutative: 2.0.1
       react: 19.3.1
 
   use-sidecar@1.1.3(@types/react@19.3.0)(react@19.3.1):
