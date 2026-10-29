@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"build": "astro build",
-		"check": "astro check",
+		"check": "tsc --noEmit --runExternalCode",
 		"deploy": "wrangler deploy",
 		"dev": "astro dev",
 		"lint": "oxlint",
@@ -34,12 +34,12 @@
 		"react-dom": "19.3.1",
 		"serwist": "9.5.13",
 		"tailwindcss": "4.3.3",
-		"typescript": "6.0.3",
+		"typescript": "7.1.0-beta",
 		"use-mutative": "2.0.0",
 		"workbox-window": "7.4.1"
 	},
 	"devDependencies": {
-		"@astrojs/check": "0.9.12",
+		"@astrojs/ts-content-mapper": "0.2.0",
 		"knip": "6.43.0",
 		"oxfmt": "0.75.0",
 		"oxlint": "1.90.0",
