@@ -45,7 +45,7 @@
 		"oxlint": "1.90.0",
 		"oxlint-tsgolint": "7.0.2005",
 		"vite-plugin-pwa": "2.0.0",
-		"wrangler": "4.154.0"
+		"wrangler": "4.155.0"
 	},
 	"devEngines": {
 		"runtime": {
