@@ -34,7 +34,7 @@
 		"react-dom": "19.3.1",
 		"serwist": "9.5.13",
 		"tailwindcss": "4.3.3",
-		"typescript": "7.1.0-dev.20261029.1",
+		"typescript": "7.1.0-dev.20261030.1",
 		"use-mutative": "2.0.0",
 		"workbox-window": "7.4.1"
 	},
