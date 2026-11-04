@@ -12,7 +12,7 @@
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
 		"lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
-		"types": ["vite-plugin-pwa/client"],
+		"types": ["@unplugin-pwa/core/client"],
 		"paths": {
 			"@/*": ["./src/*"]
 		}
