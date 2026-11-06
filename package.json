@@ -46,7 +46,7 @@
 		"oxlint": "1.91.0",
 		"oxlint-tsgolint": "7.0.2005",
 		"rolldown": "1.2.16",
-		"wrangler": "4.157.0"
+		"wrangler": "4.158.0"
 	},
 	"devEngines": {
 		"runtime": {
