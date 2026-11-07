@@ -19,7 +19,7 @@
 		"@fontsource/fira-mono": "5.3.0",
 		"@radix-ui/themes": "3.3.0",
 		"@serwist/vite": "9.5.13",
-		"@tailwindcss/vite": "4.3.4",
+		"@tailwindcss/vite": "4.3.5",
 		"@types/node": "26.6.6",
 		"@types/react": "19.3.0",
 		"@types/react-dom": "19.3.0",
@@ -34,7 +34,7 @@
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
 		"serwist": "9.5.13",
-		"tailwindcss": "4.3.4",
+		"tailwindcss": "4.3.5",
 		"typescript": "7.1.0-dev.20261106.1",
 		"use-mutative": "2.0.0"
 	},
