@@ -42,7 +42,7 @@
 		"@astrojs/ts-content-mapper": "0.2.0",
 		"@unplugin-pwa/core": "0.0.4",
 		"knip": "6.44.2",
-		"oxfmt": "0.77.0",
+		"oxfmt": "0.78.0",
 		"oxlint": "1.92.0",
 		"oxlint-tsgolint": "7.0.2006",
 		"rolldown": "1.2.16",
