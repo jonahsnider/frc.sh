@@ -43,7 +43,7 @@
 		"@unplugin-pwa/core": "0.0.4",
 		"knip": "6.44.2",
 		"oxfmt": "0.78.0",
-		"oxlint": "1.92.0",
+		"oxlint": "1.93.0",
 		"oxlint-tsgolint": "7.0.2006",
 		"rolldown": "1.2.16",
 		"wrangler": "4.158.0"
