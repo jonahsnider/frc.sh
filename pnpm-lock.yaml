@@ -199,8 +199,8 @@ importers:
         specifier: 2.0.1
         version: 2.0.1(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(astro@7.4.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@vite-pwa/workbox-window':
-        specifier: 8.0.14
-        version: 8.0.14
+        specifier: 8.0.15
+        version: 8.0.15
       astro:
         specifier: 7.4.7
         version: 7.4.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1)
@@ -2673,6 +2673,9 @@ packages:
 
   '@vite-pwa/workbox-window@8.0.14':
     resolution: {integrity: sha512-KhQ/+B70udMwluP8AhZDyWb59TfJmYIqoDVeCBeTuU496yYK4nfIvysxIp7BlDkZf8VUO7SWqYlYptlrWmPU4Q==}
+
+  '@vite-pwa/workbox-window@8.0.15':
+    resolution: {integrity: sha512-iA3z/yl3Jp1EXKmeLEg/KjyTdm6ZQZEM7YTI72lQv4ImuDlz7cGUu06Kafm7Un3/Pggci+RMrVwGZxoq9jkm4g==}
 
   '@vitejs/plugin-react@6.1.2':
     resolution: {integrity: sha512-fhJNGUdscQa4HkI0xFxwonWyhnVReCPDbXI7FH7jmzpnVCrFQI7PRrhWecO263610vOrs9tr2Y4xcf8uAdFxbw==}
@@ -5727,7 +5730,7 @@ snapshots:
   '@unplugin-pwa/core@0.0.4(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))':
     dependencies:
       '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
-      '@vite-pwa/workbox-window': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.15
       hookable: 6.1.2
     optionalDependencies:
       '@vite-pwa/assets-generator': 2.0.0(@types/node@26.6.6)
@@ -5748,7 +5751,7 @@ snapshots:
       '@unplugin-pwa/inspector': 0.0.4
       '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@vite-pwa/workbox-swkit': 8.0.14
-      '@vite-pwa/workbox-window': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.15
     optionalDependencies:
       '@vite-pwa/assets-generator': 2.0.0(@types/node@26.6.6)
       magicast: 0.5.5
@@ -5777,7 +5780,7 @@ snapshots:
       '@unplugin-pwa/vite': 0.0.4(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@vite-pwa/workbox-build': 8.0.14(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261109.1)(vite@8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@vite-pwa/workbox-swkit': 8.0.14
-      '@vite-pwa/workbox-window': 8.0.14
+      '@vite-pwa/workbox-window': 8.0.15
       astro: 7.4.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1)
     optionalDependencies:
       '@vite-pwa/assets-generator': 2.0.0(@types/node@26.6.6)
@@ -5812,6 +5815,10 @@ snapshots:
       idb: 8.0.4
 
   '@vite-pwa/workbox-window@8.0.14':
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
+  '@vite-pwa/workbox-window@8.0.15':
     dependencies:
       '@types/trusted-types': 2.0.7
 
