@@ -35,7 +35,7 @@
 		"react-dom": "19.3.1",
 		"serwist": "9.5.13",
 		"tailwindcss": "4.3.5",
-		"typescript": "7.1.0-dev.20261112.1",
+		"typescript": "7.1.0-dev.20261113.1",
 		"use-mutative": "2.0.0"
 	},
 	"devDependencies": {
