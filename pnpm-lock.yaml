@@ -248,8 +248,8 @@ importers:
         specifier: 0.2.0
         version: 0.2.0(@emnapi/runtime@1.11.3)
       '@unplugin-pwa/core':
-        specifier: 0.0.6
-        version: 0.0.6(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261117.1)(vite@8.3.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
+        specifier: 0.0.7
+        version: 0.0.7(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261117.1)(vite@8.3.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       knip:
         specifier: 6.45.1
         version: 6.45.1
@@ -2728,8 +2728,8 @@ packages:
       vite:
         optional: true
 
-  '@unplugin-pwa/core@0.0.6':
-    resolution: {integrity: sha512-tYMu0nA4nNWftYLQlbSE9AX4K8TfvXG11PmdzybAKUDYdHwTsH7+RmXP3gyhGHxzrImObpNoLNI3SLGim7csvA==}
+  '@unplugin-pwa/core@0.0.7':
+    resolution: {integrity: sha512-tuuYolkSHpziF8mi7+J+NgVvA5XMMgMSzhaXmSxUPheYnP8U4b19NSwsJX5YsDvbniHGY3ty6E2MFEre1uEHbg==}
     engines: {node: '>=22.14.0'}
     peerDependencies:
       '@vite-pwa/assets-generator': ^1.0.0 || ^2.0.0
@@ -5949,7 +5949,7 @@ snapshots:
       - typescript
       - webpack
 
-  '@unplugin-pwa/core@0.0.6(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261117.1)(vite@8.3.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))':
+  '@unplugin-pwa/core@0.0.7(@vite-pwa/assets-generator@2.0.0(@types/node@26.6.6))(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261117.1)(vite@8.3.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))':
     dependencies:
       '@vite-pwa/workbox-build': 8.0.15(magicast@0.5.5)(rolldown@1.2.16)(typescript@7.1.0-dev.20261117.1)(vite@8.3.7(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@vite-pwa/workbox-window': 8.0.15

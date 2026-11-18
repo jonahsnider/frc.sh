@@ -40,7 +40,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/ts-content-mapper": "0.2.0",
-		"@unplugin-pwa/core": "0.0.6",
+		"@unplugin-pwa/core": "0.0.7",
 		"knip": "6.45.1",
 		"oxfmt": "0.79.0",
 		"oxlint": "1.94.0",
