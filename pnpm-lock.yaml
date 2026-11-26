@@ -197,8 +197,8 @@ importers:
         specifier: 3.3.0
         version: 3.3.0(@types/react-dom@19.3.0(@types/react@19.3.1))(@types/react@19.3.1)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@serwist/vite':
-        specifier: 9.5.15
-        version: 9.5.15(browserslist@4.28.6)(rollup@4.62.2)(typescript@7.1.0-dev.20261124.1)(vite@8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
+        specifier: 9.6.0
+        version: 9.6.0(browserslist@4.28.6)(rollup@4.62.2)(typescript@7.1.0-dev.20261124.1)(vite@8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
       '@tailwindcss/vite':
         specifier: 4.3.5
         version: 4.3.5(vite@8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))
@@ -242,8 +242,8 @@ importers:
         specifier: 19.3.1
         version: 19.3.1(react@19.3.1)
       serwist:
-        specifier: 9.5.15
-        version: 9.5.15(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
+        specifier: 9.6.0
+        version: 9.6.0(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
       tailwindcss:
         specifier: 4.3.5
         version: 4.3.5
@@ -2493,8 +2493,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@serwist/build@9.5.15':
-    resolution: {integrity: sha512-NnRRuYDKA5nwyM63g9TvwQqC+adPirQgzEviSmiXoVgs6fpRk4BfekUAuqGj5WLOvHhnYSJ8TnQyqByiEgKljQ==}
+  '@serwist/build@9.6.0':
+    resolution: {integrity: sha512-I+PTTYsR5JVH8VczXnPmIoRi24MXpg2ApKps4GCFg48vhcQ2n2TAvpQpiMrksf5f9AgvBzIjp8y5aYlkFEk27A==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: '>=5.0.0'
@@ -2502,16 +2502,16 @@ packages:
       typescript:
         optional: true
 
-  '@serwist/utils@9.5.15':
-    resolution: {integrity: sha512-JhSSoiAfADr1Sn+zc9pdWjPL9WBqNe/3A99nkLj3yJRioqhR/p5WQovc1gJiDpptzAEJzB4qfFOObT0tsGf8Yw==}
+  '@serwist/utils@9.6.0':
+    resolution: {integrity: sha512-e4HdJE4tEeaaBh2ODOLIvqvb1aep2CZxJloah4puLAgx7l4jMwJutdr6zk3RmWbP12mJKjPMsGC28nWxHUtRAw==}
     peerDependencies:
       browserslist: '>=4'
     peerDependenciesMeta:
       browserslist:
         optional: true
 
-  '@serwist/vite@9.5.15':
-    resolution: {integrity: sha512-Z3fR9s0jPMsu8Zy2uHrvzb/4i7BfgN7ImeyV8ub83psscPZnM9Wf7M4WtOlSJW0pOnc3+Wju4/EtAj6/zN1gUA==}
+  '@serwist/vite@9.6.0':
+    resolution: {integrity: sha512-EodCBVKgSbsCSO30td/m4o7d3gVFB2A70FtizgtJ0UstEmCd3KatzLfHu1kiWSrLMxebX0+VLV7TFORc6tCG+w==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       rollup: '>=4.0.0'
@@ -3742,8 +3742,8 @@ packages:
     resolution: {integrity: sha512-FqlEuoTq/zRmA4Lg6aOqyH3lCHbUtCB0bmHCeFniX2GBdDqMJM3FwdvEhlE5Pim1dlt2FfBdVPmUNNiGhhKqpw==}
     engines: {node: '>=20.0.0'}
 
-  serwist@9.5.15:
-    resolution: {integrity: sha512-k//vx8zoecklv5d3KIIq1afVJOn91uhyj/k/9loEsAETHw/v3o3W7WdTnBrMGgJHZjC6OHPpOSgENprkROiFQw==}
+  serwist@9.6.0:
+    resolution: {integrity: sha512-uCKap2fCpZ+y30dcO1b3Z9BpStPjFaehWgH32msBy0rOvjBuGzDbb9mydH/oasd+B9LcFuEaGGcdhlDhZPIoYA==}
     peerDependencies:
       typescript: '>=5.0.0'
     peerDependenciesMeta:
@@ -5899,9 +5899,9 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
 
-  '@serwist/build@9.5.15(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)':
+  '@serwist/build@9.6.0(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)':
     dependencies:
-      '@serwist/utils': 9.5.15(browserslist@4.28.6)
+      '@serwist/utils': 9.6.0(browserslist@4.28.6)
       common-tags: 1.8.2
       glob: 14.0.6
       pretty-bytes: 6.1.1
@@ -5913,17 +5913,17 @@ snapshots:
     transitivePeerDependencies:
       - browserslist
 
-  '@serwist/utils@9.5.15(browserslist@4.28.6)':
+  '@serwist/utils@9.6.0(browserslist@4.28.6)':
     optionalDependencies:
       browserslist: 4.28.6
 
-  '@serwist/vite@9.5.15(browserslist@4.28.6)(rollup@4.62.2)(typescript@7.1.0-dev.20261124.1)(vite@8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))':
+  '@serwist/vite@9.6.0(browserslist@4.28.6)(rollup@4.62.2)(typescript@7.1.0-dev.20261124.1)(vite@8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1))':
     dependencies:
-      '@serwist/build': 9.5.15(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
-      '@serwist/utils': 9.5.15(browserslist@4.28.6)
+      '@serwist/build': 9.6.0(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
+      '@serwist/utils': 9.6.0(browserslist@4.28.6)
       glob: 14.0.6
       kolorist: 1.8.0
-      serwist: 9.5.15(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
+      serwist: 9.6.0(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1)
       vite: 8.3.7(@types/node@26.6.7)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.49.0)(yaml@2.9.1)
       zod: 4.6.7
     optionalDependencies:
@@ -7310,9 +7310,9 @@ snapshots:
 
   serialize-javascript@7.1.4: {}
 
-  serwist@9.5.15(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1):
+  serwist@9.6.0(browserslist@4.28.6)(typescript@7.1.0-dev.20261124.1):
     dependencies:
-      '@serwist/utils': 9.5.15(browserslist@4.28.6)
+      '@serwist/utils': 9.6.0(browserslist@4.28.6)
       idb: 8.0.3
     optionalDependencies:
       typescript: 7.1.0-dev.20261124.1

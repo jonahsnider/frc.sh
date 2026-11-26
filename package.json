@@ -18,7 +18,7 @@
 		"@astrojs/react": "7.1.9",
 		"@fontsource/fira-mono": "5.3.0",
 		"@radix-ui/themes": "3.3.0",
-		"@serwist/vite": "9.5.15",
+		"@serwist/vite": "9.6.0",
 		"@tailwindcss/vite": "4.3.5",
 		"@types/node": "26.6.7",
 		"@types/react": "19.3.1",
@@ -33,7 +33,7 @@
 		"radix-themes-tw": "1.1.0",
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
-		"serwist": "9.5.15",
+		"serwist": "9.6.0",
 		"tailwindcss": "4.3.5",
 		"typescript": "7.1.0-dev.20261124.1",
 		"use-mutative": "2.0.0"
