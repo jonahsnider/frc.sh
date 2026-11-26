@@ -21,7 +21,7 @@
 		"@serwist/vite": "9.6.0",
 		"@tailwindcss/vite": "4.3.5",
 		"@types/node": "26.6.10",
-		"@types/react": "19.3.1",
+		"@types/react": "19.3.2",
 		"@types/react-dom": "19.3.0",
 		"@vite-pwa/assets-generator": "2.0.0",
 		"@vite-pwa/astro": "2.0.4",
